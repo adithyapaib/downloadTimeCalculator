@@ -2,29 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1"name=viewport>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download Speed Calculator</title>
+    <title> Download Speed Calculator 🌎</title>
+    <meta name="theme-color" content="#CB2532">
+    <meta content="Download Time Calculator"name=description />
+    <link href="https://img.icons8.com/emoji/48/000000/owl-emoji.png" rel="shortcut icon"type=image/x-icon>
+    <meta content="https://img.icons8.com/emoji/48/000000/owl-emoji.png" property=og:image>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <div class="container">
-            <label for="speed">Enter your internet speed </label>
-            <br>
-            <input type="text" name="speed" id="speed" placeholder="25MBps" required>
-            <br>
-            <label for="size">Enter size of file</label>
-            <br>
-            <input type="text" name="size" id="size" placeholder="1.5GB">
-            <br>
-             <button id="submit">Submit</button>
+      <h2>Download Time Predictor</h2>
+      <div id="form">
+        <p>Enter Internet speed</p>
+        <input type="text" required name="speed" id="speed" placeholder="25MBps">
+        <p>File size (GB)</p>
+        <input type="text" name="size" id="size" placeholder="1.5GB" value="5" required>
+        <button id="submit">Submit</button>
+      </div>
+      <div class="output" id="output">
+       <b> <p id="download"></p></b> 
+        <p id="sent"></p>
+        <p id="onespeed"></p>
+        <p id="filespeed"></p>
+      </div>
+           
+           
+            
         
-                <p id="download"></p>
-                <p id="onespeed"></p>
-                <p id="filespeed"></p>
+             
      
     </div>
-
+   
   <script src="index.js"></script>
     
 </body>

@@ -25,16 +25,11 @@ function best()
     if(parseInt(fileMinutes)==1)
         minutes = `min`  
     fileTime =  `${fileHours}hrs, ${fileMinutes}${minutes}, ${fileSeconds}s `;
-    document.getElementById("download").innerHTML = `Download speed is  ${downloadSpeed}Mbps`;
-    document.getElementById("onespeed").innerHTML = `Approximate time required to download 1 GB file is ${oneGBTime}`;
-    document.getElementById("filespeed").innerHTML = `Approximate time required to download ${size}GB file is ${fileTime}`;
-
-    
-
-
-
-
-
+    document.getElementById("download").innerHTML = `Download speed: ${downloadSpeed}Mbps`;
+    document.getElementById("sent").innerHTML = `Approximate time required to download`;
+    document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
+    document.getElementById("filespeed").innerHTML = `${size}GB file: ${fileTime}`;
+    document.getElementById("output").style.background='#07C962'
     console.log(oneGBTime);
     console.log(fileTime)
 }
