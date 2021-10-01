@@ -4,38 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Download Time Calculator 🌎</title>
     <meta name="theme-color" content="#000000">
     <meta name="description" content="Download Time Calculator">
-    <link href="https://img.icons8.com/emoji/48/000000/owl-emoji.png" rel="shortcut icon"type=image/x-icon>
     <meta content="https://img.icons8.com/emoji/48/000000/owl-emoji.png" property=og:image>
-    <link rel="stylesheet" href="assets/index.css">
+    <title>Download Time Calculator 🌎</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
-      <h2>Download Time Predictor</h2>
-      <div id="form">
-        <p>Enter Internet speed</p>
-        <input type="text" required name="speed" id="speed" placeholder="25MBps">
-        <p>File size (GB)</p>
-        <input type="text" name="size" id="size" placeholder="1.5GB" value="5" required>
-        <button id="submit">Submit</button>
-      </div>
-      <div class="output" id="output">
-       <b> <p id="download"></p></b> 
-        <p id="sent"></p>
-        <p id="onespeed"></p>
-        <p id="filespeed"></p>
-      </div>
-           
-           
-            
-        
-             
-     
+    <div class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+        <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
+            <h2 class="font-semibold text-2xl text-center">Download Time Predictor</h2>
+            <form id="form" class="w-full px-4 space-y-9">
+                <div class="flex flex-col gap-y-2">
+                    <label>Enter Internet speed (Mbps)</label>
+                    <input type="number" placeholder="Internet speed in Mbps" id="speed" class="border-2 border-black rounded-md p-4">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <label>File size (GB)</label>
+                    <input type="number" placeholder="File size in GB" id="size" class="border-2 border-black rounded-md p-4">
+                </div>
+                <button id="submit" type="button" class="w-full text-center bg-black text-white p-4 rounded-md" id="output">
+                    Submit
+                </button>
+            </form>
+            <div id="output" class="bg-green-400 hidden rounded-md p-6 flex flex-col items-center justify-center">
+                <div class="w-full mx-auto text-center">
+                    <p id="download" class="font-semibold"></p>
+                    <p id="sent"></p>
+                    <p id="onespeed"></p>
+                    <p id="filespeed"></p>
+                </div>
+            </div>
+        </div>
     </div>
-   
-  <script src="assets/index.js"></script>
-    
 </body>
+<script src="assets/index.js"></script>
 </html>

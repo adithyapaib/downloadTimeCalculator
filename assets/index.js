@@ -10,10 +10,10 @@ function best()
     let oneGBseconds = Math.round(oneGB % 60,3);
     let oneGBTime;
     let minutes;
-    minutes = 'mins'; 
+    minutes = 'mins';
     if(parseInt(oneGBminutes)==1)
-        minutes = `min`  
-    oneGBTime =  `${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `  
+        minutes = `min`
+    oneGBTime =  `${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `
     if(oneGBhours == 0)
         oneGBTime =  `${oneGBminutes}${minutes}, ${oneGBseconds}s `
     let file =  (parseInt(size)*1024)/downloadSpeed;
@@ -23,8 +23,9 @@ function best()
     let fileTime;
     minutes = 'mins';
     if(parseInt(fileMinutes)==1)
-        minutes = `min`  
+        minutes = `min`
     fileTime =  `${fileHours}hrs, ${fileMinutes}${minutes}, ${fileSeconds}s `;
+    document.getElementById('output').style.display = 'block'
     document.getElementById("download").innerHTML = `Download speed: ${downloadSpeed}MBps`;
     document.getElementById("sent").innerHTML = `Approximate time required to download`;
     document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
