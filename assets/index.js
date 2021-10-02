@@ -3,7 +3,7 @@ function best()
 {
     let speed = document.getElementById("speed").value;
     let size = document.getElementById("size").value;
-    let downloadSpeed = speed/8;
+    let downloadSpeed = speed;
     let oneGB = parseFloat(1024/downloadSpeed);
     let oneGBhours = Math.floor(oneGB / 60 / 60);
     let oneGBminutes = Math.floor(oneGB / 60) - (oneGBhours * 60);
