@@ -1,0 +1,20 @@
+.dark{
+    background-color: #222;
+    color: #e6e6e6;
+}
+.dark button{
+    background-color: #BB86FC;
+}
+.dark .toggle{
+    background-color: #222;
+}
+.dark input{
+    color: black;
+}
+.toggle{
+    float: right;
+    margin: 10px 10px 0px 0px;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+}
