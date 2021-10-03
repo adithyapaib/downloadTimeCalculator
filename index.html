@@ -9,11 +9,15 @@
     <meta name="keywords" content="Download Calculator, Download Time Calculator, TimeCalculator">
     <link href="https://img.icons8.com/emoji/48/000000/owl-emoji.png" rel="shortcut icon"type=image/x-icon>
     <meta content="https://img.icons8.com/emoji/48/000000/owl-emoji.png" property=og:image>
+    <link href="./assets/style.css" rel="stylesheet">
+
     <title>Download Time Calculator 🌎</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <button onclick="darkmode()" class="toggle"><i class="fas fa-adjust"></i></button>
     <div class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+        
         <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
             <h2 class="font-semibold text-2xl text-center">Download Time Predictor</h2>
             <form id="form" class="w-full px-4 space-y-9">
@@ -40,6 +44,14 @@
             </div>
         </div>
     </div>
+    
 </body>
+<script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
+<script>
+    function darkmode() {
+    var element = document.body;
+    element.classList.toggle("dark");
+    }
+</script>
 <script src="assets/index.js"></script>
 </html>
