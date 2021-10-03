@@ -8,11 +8,14 @@
     bottom:0;
     width:100%;
     height :100px;
+    margin-top: 10%;
 
 padding:40px 0;
 background-color:#080808;
 color:#f8f4f4;
-margin:0;
+margin-bottom:0;
+margin-left: 0;
+margin-right: 0;
 }
 
 .footer-basic ul {

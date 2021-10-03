@@ -65,3 +65,13 @@
                 inset 2px 2px 3px rgba(10, 9, 9, 0.6);
 }
 
+.result-div{
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+ .result-div {
+    height: 40%;
+    margin-bottom: 40px;
+  }
+}
