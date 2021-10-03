@@ -25,3 +25,13 @@
     text-align: center;
     cursor: pointer;
 }
+#submit{
+    background-color: black;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+    transition: transform ease 0.4s;
+    position: relative;
+}
+#submit:hover{
+    top: -2px;
+    opacity: 0.8;
+}
