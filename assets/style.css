@@ -15,10 +15,11 @@
 }
 
 #submit:hover {
-  background: linear-gradient(to right, rgb(56, 56, 56) 50%, #222 50%);
+  background: linear-gradient(to right, rgb(207, 32, 32) 50%, rgb(51, 48, 48) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
+  box-shadow: 5px 5px 12px 1px rgb(48, 45, 45);
 }
 .toggle{
     float: right;
