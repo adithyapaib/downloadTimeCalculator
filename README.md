@@ -14,7 +14,7 @@ https://adithyapaib.github.io/downloadTimeCalculator/
 
 - Responsive Layout
 - Rich, multi-step animations 
-- Fullscreen mode
+- Light/Dark mode toggle
 - Aesthetic and modern UI
 
  ## Color Reference
