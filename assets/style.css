@@ -5,6 +5,8 @@
 .dark button{
     background-color: red;
     color: white;
+    border: 1px solid black;
+    border-radius:5px;
 }
 .dark .toggle{
     background-color: #222;
@@ -18,4 +20,14 @@
     font-size: 2em;
     text-align: center;
     cursor: pointer;
+}
+#btn{
+    background-color:black;
+    border: 1px solid black;
+    border-radius:5px;
+}
+#btn u{
+    color: white;
+    text-decoration:none;
+    
 }

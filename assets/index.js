@@ -30,7 +30,8 @@ function best()
     document.getElementById("sent").innerHTML = `Approximate time required to download`;
     document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
     document.getElementById("filespeed").innerHTML = `${size}GB file: ${fileTime}`;
-    document.getElementById("reload").innerHTML = `<a href="index.html"><u>CALCULATE NEW</u></a>`;
+    document.getElementById("reload").innerHTML = `<button id="btn"><a href="index.html"><u>CALCULATE NEW</u></a></button> `;
+    
     document.getElementById("output").style.background='#07C962'
     console.log(oneGBTime);
     console.log(fileTime)
