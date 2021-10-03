@@ -99,8 +99,8 @@ For support, email paiadithya26@gmail.com
 
 
 ## :handshake: Our Contributors
-<a href="https://github.com/adithyapaib/antiabuseapi/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=adithyapaib/antiabuseapi" />
+<a href="https://github.com/adithyapaib/downloadTimeCalculator/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=adithyapaib/downloadTimeCalculator" />
 </a>
 
  ## *Dont forget to star this repo and follow me!*
