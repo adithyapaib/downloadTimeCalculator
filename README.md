@@ -25,8 +25,8 @@ https://adithyapaib.github.io/downloadTimeCalculator/
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Dark Background  | ![#222](https://via.placeholder.com/10/ff1900?text=+) #222 |
-| Box Shadow  | ![#b8b7b7](https://via.placeholder.com/10/b8b7b7?text=+) #b8b7b7 |
+| Dark Background  | ![#222](https://via.placeholder.com/10/222?text=+) #222 |
+| Box Shadow  | ![#e6e6e6](https://via.placeholder.com/10/e6e6e6?text=+) #e6e6e6 |
 | Text | ![#0000004b](https://via.placeholder.com/10/0000004b?text=+) #0000004b |
 | Main Background | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
 
@@ -83,11 +83,6 @@ For support, email paiadithya26@gmail.com
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-#### Contributors
-
-<a href="https://github.com/adithyapaib/Neomorphic-PortfolioTemplate/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=adithyapaib/Neomorphic-PortfolioTemplate" />
-</a>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
