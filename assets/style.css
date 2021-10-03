@@ -1,27 +1,36 @@
-
-.dark{
+.dark {
     background-color: #222;
     color: #e6e6e6;
-}
-.dark button{
-    background-color:#1DB954;
-    color: white;
-}
+  }
 
-.dark button:hover{
-    background-color: grey;
-    
-}
-.dark .toggle{
-    background-color: #222;
-}
-.dark input{
+  
+  .dark input {
     color: black;
-}
-.toggle{
+  }
+  
+  .toggle {
     float: right;
     margin: 10px 10px 0px 0px;
     font-size: 2em;
     text-align: center;
     cursor: pointer;
-}
+  
+  }
+  
+  #submit:hover {
+    background: linear-gradient(to right, rgb(56, 56, 56) 50%, #222 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+  }
+  
+  #submit {
+    border: 1px solid white;
+    background-color: #222;
+    color: white;
+  }
+  #submit-dark{
+    border: 1px solid black;
+    background-color: green;
+
+  }
