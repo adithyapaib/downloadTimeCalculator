@@ -99,8 +99,12 @@
   ></script>
   <script>
     function darkmode() {
-      var element = document.body;
-      element.classList.toggle("dark");
+
+    var element = document.body;
+    element.classList.toggle("dark");
+    document.getElementById('submit').setAttribute('id', 'submit-dark');
+
+
     }
   </script>
   <script src="assets/index.js"></script>
