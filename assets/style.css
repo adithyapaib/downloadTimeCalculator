@@ -1,6 +1,7 @@
-.dark{
-    background-color: #222;
-    color: #e6e6e6;
+
+.dark {
+  background-color: #222;
+  color: #e6e6e6;
 }
 .dark button{
     background-color: black;
@@ -12,8 +13,12 @@
 .dark .toggle{
     background-color: #222;
 }
-.dark input{
-    color: black;
+
+#submit:hover {
+  background: linear-gradient(to right, rgb(56, 56, 56) 50%, #222 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
 }
 .toggle{
     float: right;
