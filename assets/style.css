@@ -1,3 +1,7 @@
+ 
+  .dark input {
+    color: black;
+}
 
 .dark {
   background-color: #222;
@@ -28,7 +32,28 @@
     font-size: 2em;
     text-align: center;
     cursor: pointer;
-}
+  }
+  
+  #submit:hover {
+    background: linear-gradient(to right, rgb(56, 56, 56) 50%, #222 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+  }
+  
+  #submit {
+    border: 1px solid white;
+    background-color: #222;
+    color: white;
+  }
+
+  #submit-dark{
+    border: 1px solid black;
+    background-color: green;
+
+  }
+
+
 .confirmSubmit {
     border: 0;
     line-height: 2.5;

@@ -4,6 +4,12 @@
 A site to get approximate download time
 built on html css and js
 
+## HACKTOBERFEST IMPORTANT NOTICE
+
+#### Please make sure your are commmiting your changes to the right branch 
+#### If you PR to the wrong branch then there will be merege conflicts !!!
+For any Queries pls reach me via https://www.linkedin.com/in/adithyapaib/
+
 ## Demo
 https://adithyapaib.github.io/downloadTimeCalculator/
 
