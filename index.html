@@ -9,6 +9,9 @@
     <meta name="description" content="Download Time Calculator">
     <meta name="keywords" content="Download Calculator, Download Time Calculator, TimeCalculator">
     <link href="https://img.icons8.com/emoji/48/000000/owl-emoji.png" rel="shortcut icon"type=image/x-icon>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
     <meta content="https://img.icons8.com/emoji/48/000000/owl-emoji.png" property=og:image>
     <link href="./assets/style.css" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
@@ -29,8 +32,8 @@
 <body>
 
 <header class="text-gray-400 bg-gray-900 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="index.html">
+  <div class="container mx-auto flex flex-wrap p-4 flex-col md:flex-row items-center">
+    <a style="text-decoration: none;" class="flex title-font font-medium items-center text-white mb-4 md:mb-0 mt-3" href="index.html">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
           </svg>
@@ -38,7 +41,7 @@
     </a>
     <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
         
-      <a class="mr-5 hover:text-white" href="indexonchange.html">Auto Calculate</a>
+      <a style="text-decoration: none;" class="mr-5 hover:text-white" href="indexonchange.html">Auto Calculate</a>
       <a class="mr-5 hover:text-white">Second Link</a>
       <a class="mr-5 hover:text-white">Third Link</a>
       <a class="mr-5 hover:text-white">Fourth Link</a>
@@ -65,7 +68,7 @@
                     <label>File size (GB)</label>
                     <input type="number" placeholder="File size in GB" id="size" class="border-2 border-black rounded-md p-4">
                 </div>
-                <button id="submit" type="button" class="w-full text-center bg-black text-white p-4 rounded-md confirmSubmit" id="output">
+                <button id="submit" type="button" class="w-full text-center bg-black text-white p-3 rounded-md confirmSubmit" id="output">
                     Submit
                 </button>
             </form>

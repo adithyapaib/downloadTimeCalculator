@@ -1,4 +1,6 @@
-
+*{
+    font-family: 'Poppins', sans-serif;
+}
 .dark {
   background-color: #222;
   color: #e6e6e6;
@@ -57,3 +59,4 @@
     box-shadow: inset -2px -2px 3px rgba(95, 93, 93, 0.6),
                 inset 2px 2px 3px rgba(10, 9, 9, 0.6);
 }
+
