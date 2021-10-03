@@ -8,7 +8,9 @@
     color: white;
 }
 .dark .confirmSubmit:hover{
-    background-color:rgba(220, 0, 0, 1);
+    background-color: rgb(73, 70, 72);
+  color:white;
+   box-shadow: 1px 1px 1px black;
 }
 .dark .toggle{
     background-color: #222;
@@ -34,7 +36,7 @@
     font-size: 1rem;
     text-align: center;
     color: #fff;
-    text-shadow: 1px 1px 1px #000;
+   
     border-radius: 10px;
     transition: transform .2s;
     background-color: rgba(220, 0, 0, 1);
@@ -49,7 +51,7 @@
 .confirmSubmit:hover,.confirmSubmit:focus {
     background-color: rgba(255, 0, 0, 1);
     transform: scale(1.02);
-   
+    text-shadow: 1px 1px 1px #000;
 }
 
 
