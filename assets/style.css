@@ -3,7 +3,8 @@
     color: #e6e6e6;
 }
 .dark button{
-    background-color: #BB86FC;
+    background-color: red;
+    color: white;
 }
 .dark .toggle{
     background-color: #222;
