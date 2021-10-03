@@ -1,30 +1,35 @@
 
-.dark{
-    background-color: #222;
-    color: #e6e6e6;
-}
-.dark button{
-    background-color: red;
-    color: white;
+.dark {
+  background-color: #222;
+  color: #e6e6e6;
 }
 
-.dark button:hover{
-    background-color: grey;
-    
+.dark input {
+  color: black;
 }
-.dark .toggle{
-    background-color: #222;
+
+.toggle {
+  float: right;
+  margin: 10px 10px 0px 0px;
+  font-size: 2em;
+  text-align: center;
+  cursor: pointer;
+
 }
-.dark input{
-    color: black;
+
+#submit:hover {
+  background: linear-gradient(to right, rgb(56, 56, 56) 50%, #222 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
 }
-.toggle{
-    float: right;
-    margin: 10px 10px 0px 0px;
-    font-size: 2em;
-    text-align: center;
-    cursor: pointer;
+
+#submit {
+  border: 1px solid white;
+  background-color: #222;
+  color: white;
 }
+<<<<<<< HEAD
 #submit{
     background-color: black;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
@@ -35,3 +40,6 @@
     top: -2px;
     opacity: 0.8;
 }
+=======
+
+>>>>>>> a92739991d23ba2a3fee0e75ff780f8e1925fd30
