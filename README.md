@@ -1,8 +1,4 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+
 
 # downloadTimeCalculator
 A site to get approximate download time
@@ -26,11 +22,8 @@ https://adithyapaib.github.io/downloadTimeCalculator/
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Dark Background  | ![#222](https://via.placeholder.com/10/222?text=+) #222 |
-| Box Shadow  | ![#e6e6e6](https://via.placeholder.com/10/e6e6e6?text=+) #e6e6e6 |
-| Text | ![#0000004b](https://via.placeholder.com/10/0000004b?text=+) #0000004b |
-| Main Background | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) #ffffff |
+| Light Background | ![#e6e6e6](https://via.placeholder.com/10/e6e6e6?text=+) #e6e6e6 |
 
-  
 # Hi, I'm Adithya! 👋
 
 ## 🚀 About Me
