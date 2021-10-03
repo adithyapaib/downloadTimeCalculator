@@ -1,20 +1,40 @@
-.dark {
-    background-color: #222;
-    color: #e6e6e6;
-  }
+
+
 
   
   .dark input {
     color: black;
   }
   
-  .toggle {
+  
+
+.dark {
+  background-color: #222;
+  color: #e6e6e6;
+}
+.dark button{
+    background-color: black;
+    color: white;
+}
+.dark .confirmSubmit:hover{
+    background-color:rgba(220, 0, 0, 1);
+}
+.dark .toggle{
+    background-color: #222;
+}
+
+#submit:hover {
+  background: linear-gradient(to right, rgb(56, 56, 56) 50%, #222 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+.toggle{
     float: right;
     margin: 10px 10px 0px 0px;
     font-size: 2em;
     text-align: center;
     cursor: pointer;
-  
   }
   
   #submit:hover {
@@ -29,8 +49,42 @@
     background-color: #222;
     color: white;
   }
+
   #submit-dark{
     border: 1px solid black;
     background-color: green;
 
   }
+
+
+.confirmSubmit {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    transition: transform .2s;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+                                      rgba(0, 0, 0, .2),
+                                      rgba(0, 0, 0, .2) 30%,
+                                      rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.confirmSubmit:hover,.confirmSubmit:focus {
+    background-color: rgba(255, 0, 0, 1);
+    transform: scale(1.02);
+   
+}
+
+
+.confirmSubmit:active {
+    box-shadow: inset -2px -2px 3px rgba(95, 93, 93, 0.6),
+                inset 2px 2px 3px rgba(10, 9, 9, 0.6);
+}
+
