@@ -1,3 +1,4 @@
+
 .dark{
     background-color: #222;
     color: #e6e6e6;
@@ -5,6 +6,11 @@
 .dark button{
     background-color: red;
     color: white;
+}
+
+.dark button:hover{
+    background-color: grey;
+    
 }
 .dark .toggle{
     background-color: #222;
