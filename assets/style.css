@@ -110,3 +110,11 @@
                 inset 2px 2px 3px rgba(10, 9, 9, 0.6);
 }
 
+
+#output{
+margin-bottom:100px;
+}
+a:hover{
+  background-color:#363333;
+}
+
