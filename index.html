@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="./assets/helper.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="helper.css"> -->
+
     <style>
      .button {
       background-color:darkgreen;
@@ -42,11 +43,8 @@
     </style>
 
 
-
-
-
   </head>
-<body>
+<body onload="thememode()">
 
 <header class="text-gray-400 bg-gray-900 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -124,35 +122,47 @@
   ></script>
   <script>
 
-
-   var darkmodeactive = "False";
-    function darkmode() {
-      var element  = document.body;
-      if(darkmodeactive == "False") {
-          
-        darkmodeactive = "True";
-        document.body.style.backgroundColor = "black";
-        document.body.style.color = "white";
-        document.getElementById('submit').setAttribute('id', 'submit-dark');
-
-      } else {
-        lightmode();
+    function thememode() {
+      let theme = localStorage.getItem('theme');
+      if(!theme){
+      theme = 'dark';
+      localStorage.setItem('theme', 'dark');
       }
+      else if(theme=='dark'){
+        var element = document.body;
+    element.classList.remove("dark");
+    document.getElementById('submit-dark').setAttribute('id', 'submit');
+      }
+      else{
 
     var element = document.body;
     element.classList.toggle("dark");
     document.getElementById('submit').setAttribute('id', 'submit-dark');
-  
-
+    
+      }
+    
     }
 
-    function lightmode(){
-    darkmodeactive = "False";
-    document.body.style.backgroundColor = "white";
-    document.body.style.color = "black";
+    function darkmode() {
+      let theme = localStorage.getItem('theme');
+      if(theme=='light'){
+        theme = 'dark';
+        localStorage.setItem('theme', 'dark');
+        var element = document.body;
+    element.classList.remove("dark");
     document.getElementById('submit-dark').setAttribute('id', 'submit');
-  } 
+      }
+      else{
+        theme = 'light';
+        localStorage.setItem("theme","light");
+    var element = document.body;
+    element.classList.toggle("dark");
+    document.getElementById('submit').setAttribute('id', 'submit-dark');
     
+      }
+    
+    }
+
 
     
     
