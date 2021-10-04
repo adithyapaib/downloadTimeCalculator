@@ -83,5 +83,25 @@
                 inset 2px 2px 3px rgba(10, 9, 9, 0.6);
 }
 
-
-
+#auto_calc{
+  font-size:  20px;
+}
+#home_page{
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+  width: 640px;
+  height: 50px;
+  border-radius:20px;
+  background-color:#426ccb;
+}
+#home_page:hover{
+background-color:aquamarine;
+}
+#toggle_btn{
+  margin-left: 950px;
+}
+#heading{
+  font-size: 35px;
+  
+}
