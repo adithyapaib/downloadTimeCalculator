@@ -33,7 +33,7 @@
   }
   
   #submit:hover {
-    background: linear-gradient(to right, rgb(56, 56, 56) 50%, #222 50%);
+    background: linear-gradient(to right, rgb(182, 158, 25) 50%, rgb(209, 125, 16) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
@@ -41,16 +41,22 @@
   
   #submit {
     border: 1px solid white;
-    background-color: #222;
+    background-color: rgb(216, 152, 33);
     color: white;
   }
 
   #submit-dark{
     border: 1px solid black;
-    background-color: green;
+    background-color: rgb(61, 36, 102);
 
   }
-
+  
+  #submit-dark:hover{
+    background: linear-gradient(to right, rgb(41, 25, 182) 50%, rgb(41, 22, 128) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+  }
 
 .confirmSubmit {
     border: 0;
