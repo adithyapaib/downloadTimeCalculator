@@ -4,7 +4,7 @@
 }
 
 .dark {
-  background-color: #222;
+  background-color: #24292f;
   color: #e6e6e6;
 }
 .dark button{
@@ -15,7 +15,7 @@
     background-color:rgba(220, 0, 0, 1);
 }
 .dark .toggle{
-    background-color: #222;
+    background-color: #24292f;
 }
 
 #submit:hover {
@@ -41,7 +41,7 @@
   
   #submit {
     border: 1px solid white;
-    background-color: #222;
+    background-color: #24292f;
     color: white;
   }
 
