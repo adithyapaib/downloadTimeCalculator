@@ -44,19 +44,27 @@
     border: 1px solid white;
     background-color: rgb(216, 152, 33);
     color: white;
+    padding-bottom: 31px;
+    position: relative;
+    top: 65vh
   }
 
   #submit-dark{
     border: 1px solid black;
-    background-color: rgb(61, 36, 102);
-
+    background-color: rgb(130, 71, 224);
+    box-shadow: -5px 5px 15px 4px rgb(78, 58, 119);
+    padding-bottom: 31px;
+    position: relative;
+    top: 65vh
   }
   
   #submit-dark:hover{
-    background: linear-gradient(to right, rgb(41, 25, 182) 50%, rgb(41, 22, 128) 50%);
+    background: linear-gradient(to right, rgb(42, 136, 165) 50%, rgb(76, 53, 179) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
+    transform: scale(1.3);
+    box-shadow: 2px 8px 20px 4px rgb(41, 105, 165);
   }
 
 .confirmSubmit {
@@ -90,5 +98,8 @@
                 inset 2px 2px 3px rgba(10, 9, 9, 0.6);
 }
 
-
-
+.gap-y-12{
+  height: 0vh;
+  position: relative;
+  top: -250px;
+}
