@@ -65,7 +65,10 @@
         
     </nav>
     
-      <button onclick="darkmode()" class="toggle"><i class="fas fa-adjust"></i></button>
+
+      
+      <button onclick="darkmode()" on click="check()" class="toggle"><i class="fas fa-adjust"></i></button>
+        
     
   </div>
 </header>
@@ -120,7 +123,21 @@
     crossorigin="anonymous"
   ></script>
   <script>
+
+
+   var darkmodeactive = "False";
     function darkmode() {
+      var element  = document.body;
+      if(darkmodeactive == "False") {
+          
+        darkmodeactive = "True";
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        document.getElementById('submit').setAttribute('id', 'submit-dark');
+
+      } else {
+        lightmode();
+      }
 
     var element = document.body;
     element.classList.toggle("dark");
@@ -128,6 +145,17 @@
   
 
     }
+
+    function lightmode(){
+    darkmodeactive = "False";
+    document.body.style.backgroundColor = "white";
+    document.body.style.color = "black";
+    document.getElementById('submit-dark').setAttribute('id', 'submit');
+  } 
+    
+
+    
+    
   </script>
   <script src="assets/index.js"></script>
 </html>
