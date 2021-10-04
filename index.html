@@ -19,7 +19,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="./assets/helper.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="helper.css"> -->
-
+    <style>
+     .button {
+      background-color:darkgreen;
+      border-color:red;
+      color:white;
+      font-size: 15px;
+      padding:15px;
+      padding-top:10px;
+      padding-bottom:20px;
+      width:200px; height:30px; border:2px solid green;
+   
+      }
+      .center {
+  		margin: 0;
+  		position:absolute;
+  		top: 150%;
+  		left: 50%;
+  		-ms-transform: translate(-50%, -50%);
+  		transform: translate(-50%, -50%);
+		}
+    </style>
 
 
 
@@ -65,9 +85,11 @@
                     <label>File size (GB)</label>
                     <input type="number" placeholder="File size in GB" id="size" class="border-2 border-black rounded-md p-4">
                 </div>
-                <button id="submit" type="button" class="w-full text-center bg-black text-white p-4 rounded-md confirmSubmit" id="output">
+                <div class="center"> 
+                <button id="submit" class="button id="output">
                     Submit
                 </button>
+                </div>
             </form>
             <div id="output" class="bg-green-400 hidden rounded-md p-6 flex flex-col items-center justify-center">
                 <div class="w-full mx-auto text-center">
