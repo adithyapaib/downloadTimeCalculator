@@ -58,7 +58,8 @@ opacity:0.75;
 }
 
 .footer-basic .social > a:hover {
-opacity:0.9;
+opacity:1;
+color: rgb(81, 81, 241);
 }
 
 .footer-basic .copyright {
@@ -72,8 +73,9 @@ margin-bottom:0;
     transition: transform 1s;
 }
 #submit:hover {
-    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }
+  
 .grow{
     transition: transform 1s;
 }
