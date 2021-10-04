@@ -22,24 +22,16 @@
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
+  top: -2px;
+    opacity: 0.8;
 }
 
 #submit {
   border: 1px solid white;
   background-color: #222;
   color: white;
-}
-<<<<<<< HEAD
-#submit{
-    background-color: black;
+  background-color: black;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     transition: transform ease 0.4s;
     position: relative;
 }
-#submit:hover{
-    top: -2px;
-    opacity: 0.8;
-}
-=======
-
->>>>>>> a92739991d23ba2a3fee0e75ff780f8e1925fd30
