@@ -102,6 +102,7 @@
   ></script>
   <script>
 
+
    var darkmodeactive = "False";
     function darkmode() {
       var element  = document.body;
@@ -115,6 +116,11 @@
       } else {
         lightmode();
       }
+
+    var element = document.body;
+    element.classList.toggle("dark");
+    document.getElementById('submit').setAttribute('id', 'submit-dark');
+  
 
     }
 
