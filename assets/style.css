@@ -45,15 +45,15 @@
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
                                       rgba(0, 0, 0, 0));
-    /* box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                inset -2px -2px 3px rgba(0, 0, 0, .6);*/
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+                inset -2px -2px 3px rgba(0, 0, 0, .6);
     outline: none;
                  
 }
 
 .confirmSubmit:hover,.confirmSubmit:focus {
     background-color: #145C9E;
-    /* transform: scale(1.02); */
+    transform: scale(1.02);
     font-size: large;
     color: #000;
     outline: none;
@@ -70,7 +70,7 @@
 }
 
 @media only screen and (max-width: 600px) {
- .result-div {
+ .result-division-bottom {
     height: 40%;
     margin-bottom: 40px;
   }
