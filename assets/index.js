@@ -1,4 +1,11 @@
 document.getElementById("submit").addEventListener("click",best);
+if(window.location.href.includes('indexonchange.html')){
+    document.getElementById("speed").addEventListener("change",best);
+    document.getElementById("size").addEventListener("change",best);
+    document.getElementById("speed").addEventListener("keyup",best);
+    document.getElementById("size").addEventListener("keyup",best);
+    best();
+}
 function best()
 {
     let speed = document.getElementById("speed").value;
@@ -32,11 +39,13 @@ function best()
             minutes = `min`
         fileTime =  `${fileHours}hrs, ${fileMinutes}${minutes}, ${fileSeconds}s `;
         document.getElementById('output').style.display = 'block'
-        document.getElementById("download").innerHTML = `Download speed: ${downloadSpeed}MBps`;
+        document.getElementById("download").innerHTML = `Download speed: ${downloadSpeed}Mbps`;
         document.getElementById("sent").innerHTML = `Approximate time required to download`;
         document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
         document.getElementById("filespeed").innerHTML = `${size}GB file: ${fileTime}`;
-        document.getElementById("reload").innerHTML = `<br><br><a href="index.html" class="w-full text-center bg-black text-white p-4 rounded-md">CALCULATE NEW</a>`;
+        if(!window.location.href.includes('indexonchange.html')){
+            document.getElementById("reload").innerHTML = `<br><br><a href="index.html" class="w-full text-center bg-black text-white p-4 rounded-md">CALCULATE NEW</a>`;
+        }
         document.getElementById("output").style.background='#07C962'
         console.log(oneGBTime);
         console.log(fileTime)
