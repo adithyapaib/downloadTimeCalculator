@@ -3,7 +3,7 @@ function best()
 {
     let speed = document.getElementById("speed").value;
     let size = document.getElementById("size").value;
-    if(speed=="" || size=="")
+    if(speed==="" || size==="")
     {
         alert("Please fill all the fields");
     }
