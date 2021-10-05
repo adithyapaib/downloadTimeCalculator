@@ -1,4 +1,5 @@
-.dark input {
+
+  .dark input {
     color: black;
 }
 
@@ -52,7 +53,7 @@
   }
   
   #submit-dark:hover{
-   
+    background: linear-gradient(to right, rgb(41, 25, 182) 50%, rgb(41, 22, 128) 50%);
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.5s ease-out;
@@ -87,85 +88,4 @@
 .confirmSubmit:active {
     box-shadow: inset -2px -2px 3px rgba(95, 93, 93, 0.6),
                 inset 2px 2px 3px rgba(10, 9, 9, 0.6);
-}
-     .button {
-      background-color:darkgreen;
-      border-color:red;
-      color:white;
-      font-size: 15px;
-      padding:15px;
-      padding-top:10px;
-      padding-bottom:20px;
-      width:200px; height:30px; border:2px solid green;
-      }
-      .center {
-  		margin: 0;
-  		position:absolute;
-  		top: 150%;
-  		left: 50%;
-  		-ms-transform: translate(-50%, -50%);
-  		transform: translate(-50%, -50%);
-		}
-
-a{
-  text-decoration: none;
-  color: antiquewhite;
-}
-header button{
-  font-size: 25px;
-}
-.submit-button{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: larger;
-  background: linear-gradient(to right, rgb(182, 158, 25) , rgb(209, 125, 16));
-  height:4rem;
-  border-radius: 5px;
-  transform: scale(1);
-}
-.submit-button:hover{
-  background: linear-gradient(to right, rgb(233, 199, 9) 50%, rgb(231, 134, 8) 50%);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  transition: all 0.5s ease-out;
-}
-.submit-button:active{
-  transform: scale(1.2);
-}
-
-
-.fade-out{
-  display: none;
-}
-.main-section{
-  display: flex;
-}
-#output{
-  margin: 4rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
-footer{
-  background-color: rgb(0, 0, 0);
-  height: 3rem;
-}
-.sticky-footer{
-  background-color: rgb(0, 0, 0);
-  height: 3rem;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-.social{
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 2rem;
-}
-.social a{
-  color: aqua;
 }
