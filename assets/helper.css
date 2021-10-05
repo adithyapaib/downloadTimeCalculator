@@ -62,7 +62,18 @@
 .footer-basic .social > a:hover {
   opacity: 0.9;
 }
-
+.footer-basic .social a#change:hover{
+  background: #aaa;
+}
+.footer-basic .social a#change2:hover{
+  background: #2867B2;
+}
+.footer-basic .social a#change3:hover{
+  background: #55acee;
+}
+.footer-basic .social a#change4:hover{
+  background: #3b5998;
+}
 .footer-basic .copyright {
   margin-top: 15px;
   text-align: center;
