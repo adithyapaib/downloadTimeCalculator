@@ -1,4 +1,4 @@
- 
+
   .dark input {
     color: black;
 }
@@ -12,7 +12,9 @@
     color: white;
 }
 .dark .confirmSubmit:hover{
-    background-color:rgba(220, 0, 0, 1);
+    background-color:#45aaf2;
+    border: none;
+    outline: none;
 }
 .dark .toggle{
     background-color: #222;
@@ -27,7 +29,6 @@
 }
 .toggle{
     float: right;
-    margin: 10px 10px 0px 0px;
     font-size: 2em;
     text-align: center;
     cursor: pointer;
@@ -42,20 +43,32 @@
   
   #submit {
     border: 1px solid white;
+
     background-color: rgb(216, 152, 33);
     color: white;
     padding-bottom: 31px;
     position: relative;
     top: 65vh
+
+    width: 627px;
+    height:70px;
+    color: black;
+    font-size: 30px;
   }
 
   #submit-dark{
     border: 1px solid black;
+
     background-color: rgb(130, 71, 224);
     box-shadow: -5px 5px 15px 4px rgb(78, 58, 119);
     padding-bottom: 31px;
     position: relative;
     top: 65vh
+
+    background-color: rgb(61, 36, 102);
+    width: 620px;
+    height:57px;
+
   }
   
   #submit-dark:hover{
@@ -76,20 +89,25 @@
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
+    font-weight: bold;
     transition: transform .2s;
-    background-color: rgba(220, 0, 0, 1);
+    background-color: #145C9E;
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
                                       rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
+    outline: none;
+                 
 }
 
 .confirmSubmit:hover,.confirmSubmit:focus {
-    background-color: rgba(255, 0, 0, 1);
+    background-color: #145C9E;
     transform: scale(1.02);
-   
+    font-size: large;
+    color: #000;
+    outline: none;
 }
 
 
@@ -103,3 +121,32 @@
   position: relative;
   top: -250px;
 }
+
+
+.result-div{
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+ .result-division-bottom {
+    height: 40%;
+    margin-bottom: 40px;
+  }
+}
+
+
+#footer {
+
+  margin-top:110px;
+}
+
+#header{
+  margin-bottom: 110px;
+  height: 120px;
+}
+
+#title {
+  font-size: 35px;
+}
+
+
