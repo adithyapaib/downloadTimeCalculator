@@ -41,14 +41,18 @@
   
   #submit {
     border: 1px solid white;
-    background-color: rgb(216, 152, 33);
-    color: white;
+    width: 627px;
+    height:70px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
   }
 
   #submit-dark{
     border: 1px solid black;
     background-color: rgb(61, 36, 102);
-
+    width: 620px;
+    height:57px;
   }
   
   #submit-dark:hover{
@@ -88,3 +92,19 @@
     box-shadow: inset -2px -2px 3px rgba(95, 93, 93, 0.6),
                 inset 2px 2px 3px rgba(10, 9, 9, 0.6);
 }
+
+
+#footer {
+
+  margin-top:110px;
+}
+
+#header{
+  margin-bottom: 110px;
+  height: 120px;
+}
+
+#title {
+  font-size: 35px;
+}
+
