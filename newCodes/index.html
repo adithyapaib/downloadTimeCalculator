@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Download Time Calculator">
+  <meta name="keywords" content="Download Calculator, Download Time Calculator, TimeCalculator">
+  <link href="https://img.icons8.com/emoji/48/000000/owl-emoji.png" rel="shortcut icon" type=image/x-icon>
+  <meta content="https://img.icons8.com/emoji/48/000000/owl-emoji.png" property=og:image>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <title>Download Time Calculator 🌎</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"
+    integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"
+    integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+  <header class="text-gray-400 bg-gray-900 body-font header">
+    <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+        </svg>
+        <span class="ml-3 text-xl" style="color: antiquewhite">Download Time Predictor</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-white" href="indexonchange.html">Auto Calculate</a>
+        <a class="mr-5 hover:text-white" href="#">Second Link</a>
+        <a class="mr-5 hover:text-white" href="#">Third Link</a>
+        <a class="mr-5 hover:text-white" href="#">Fourth Link</a>
+      </nav>
+      <button class="toggle mode"><i class="fas fa-adjust"></i></button>
+    </div>
+  </header>
+
+
+<section class="main-section ">
+  <div id="input" class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+    <div class="flex flex-col gap-y-10 mx-auto justfiy-around w-full">
+      <h2 class="font-semibold text-2xl text-center"><b>Download Time Predictor</b></h2>
+      <form id="form" class="w-full px-4 space-y-9">
+        <div class="flex flex-col gap-y-2">
+          <label>Enter your Internet speed (Mbps)</label>
+          <input type="number" placeholder="Internet speed in Mbps" id="speed"
+            class="border-2 border-black rounded-md p-4">
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <label>File size (GB)</label>
+          <input type="number" placeholder="File size in GB" id="size" class="border-2 border-black rounded-md p-4">
+        </div>
+        <div class="submit-button">
+            Submit
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div id="output" class="w-full bg-green-400 rounded-md p-4 flex flex-col items-center justify-center fade-out">
+  <div class=" mx-auto text-center">
+    <p id="download" class="font-semibold">---</p>
+    <p id="sent">---</p>
+    <p id="onespeed">---</p>
+    <p id="filespeed">---</p>
+    <p id="reload">---</p>
+  </div>
+</div>
+</section>
+
+
+
+   <footer id="footer">
+      <div class="social ">
+        <a href="https://github.com/adithyapaib" target="blank"><i class=" icon ion-social-github"></i></a>
+        <a href="https://www.linkedin.com/" target="blank"><i class="icon ion-social-linkedin"></i></a>
+        <a href="https://twitter.com/adithyapaib" target="blank"><i class="icon ion-social-twitter"></i></a>
+        <a href="facebook.com" target="blank"><i class="icon ion-social-facebook"></i></a>
+        </div>
+    </footer>
+  <script src="./assets/index.js"></script>
+</body>
+
+</html>
