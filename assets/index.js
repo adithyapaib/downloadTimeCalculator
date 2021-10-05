@@ -1,23 +1,4 @@
-const submitButton = document.querySelector('.submit-button');
-const mode = document.querySelector('.mode');
-submitButton.addEventListener('click',best);
-mode.addEventListener('click',thememode);
-
-window.onload=()=>{
-  let theme = localStorage.getItem('theme');
-    console.log(theme);
-    if(theme === 'light'){
-      var element = document.body;
-      element.classList.remove("dark");
-      localStorage.setItem('theme','light');
-    }
-    else{
-      var element = document.body;
-      element.classList.add("dark");
-      localStorage.setItem('theme','dark');
-    }
-}
-
+document.getElementById("submit").addEventListener("click",best);
 function best()
 {
     let speed = document.getElementById("speed").value;
@@ -25,10 +6,6 @@ function best()
     if(speed==="" || size==="")
     {
         alert("Please fill all the fields");
-    }
-    else if(speed < 0|| size< 0)
-    {
-        alert("Please enter non-negative values in field");
     }
     else
     {
@@ -54,31 +31,14 @@ function best()
         if(parseInt(fileMinutes)==1)
             minutes = `min`
         fileTime =  `${fileHours}hrs, ${fileMinutes}${minutes}, ${fileSeconds}s `;
-        document.getElementById("footer").classList.add("sticky-footer");
+        document.getElementById('output').style.display = 'block'
         document.getElementById("download").innerHTML = `Download speed: ${downloadSpeed}MBps`;
         document.getElementById("sent").innerHTML = `Approximate time required to download`;
         document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
         document.getElementById("filespeed").innerHTML = `${size}GB file: ${fileTime}`;
         document.getElementById("reload").innerHTML = `<br><br><a href="index.html" class="w-full text-center bg-black text-white p-4 rounded-md"><button id="calculate">CALCULATE NEW</button></a>`;
         document.getElementById("output").style.background='#07C962'
-        document.getElementById('input').style.display = 'none'
-        document.getElementById('output').style.display = 'block' 
+        console.log(oneGBTime);
+        console.log(fileTime)
     }
 }
-
-function thememode() {
-    let theme = localStorage.getItem('theme');
-    console.log(theme);
-    if(theme === 'light'){
-      var element = document.body;
-      element.classList.add("dark");
-      localStorage.setItem('theme','dark');
-    }
-    else{
-      var element = document.body;
-      element.classList.remove("dark");
-      localStorage.setItem('theme','light');
-    }
-  }
-
- 
