@@ -1,4 +1,8 @@
 
+  .dark input {
+    color: black;
+}
+
 .dark {
   background-color: #222;
   color: #e6e6e6;
@@ -17,18 +21,49 @@
 }
 
 #submit:hover {
-  background: linear-gradient(to right, rgb(56, 56, 56) 50%, #222 50%);
+  background: linear-gradient(to right, rgb(207, 32, 32) 50%, rgb(51, 48, 48) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
+  box-shadow: 5px 5px 12px 1px rgb(48, 45, 45);
 }
 .toggle{
     float: right;
-    margin: 10px 10px 0px 0px;
     font-size: 2em;
     text-align: center;
     cursor: pointer;
-}
+  }
+  
+  #submit:hover {
+    background: linear-gradient(to right, rgb(182, 158, 25) 50%, rgb(209, 125, 16) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+  }
+  
+  #submit {
+    border: 1px solid white;
+    width: 627px;
+    height:70px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #submit-dark{
+    border: 1px solid black;
+    background-color: rgb(61, 36, 102);
+    width: 620px;
+    height:57px;
+  }
+  
+  #submit-dark:hover{
+    background: linear-gradient(to right, rgb(41, 25, 182) 50%, rgb(41, 22, 128) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+  }
+
 .confirmSubmit {
     border: 0;
     line-height: 2.5;
@@ -65,6 +100,7 @@
                 inset 2px 2px 3px rgba(10, 9, 9, 0.6);
 }
 
+
 .result-div{
   display: flex;
 }
@@ -75,3 +111,20 @@
     margin-bottom: 40px;
   }
 }
+=======
+
+#footer {
+
+  margin-top:110px;
+}
+
+#header{
+  margin-bottom: 110px;
+  height: 120px;
+}
+
+#title {
+  font-size: 35px;
+}
+
+
