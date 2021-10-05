@@ -12,7 +12,9 @@
     color: white;
 }
 .dark .confirmSubmit:hover{
-    background-color:rgba(220, 0, 0, 1);
+    background-color:#45aaf2;
+    border: none;
+    outline: none;
 }
 .dark .toggle{
     background-color: #222;
@@ -71,20 +73,25 @@
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
+    font-weight: bold;
     transition: transform .2s;
-    background-color: rgba(220, 0, 0, 1);
+    background-color: #145C9E;
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
                                       rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
                 inset -2px -2px 3px rgba(0, 0, 0, .6);
+    outline: none;
+                 
 }
 
 .confirmSubmit:hover,.confirmSubmit:focus {
-    background-color: rgba(255, 0, 0, 1);
+    background-color: #145C9E;
     transform: scale(1.02);
-   
+    font-size: large;
+    color: #000;
+    outline: none;
 }
 
 
@@ -93,6 +100,18 @@
                 inset 2px 2px 3px rgba(10, 9, 9, 0.6);
 }
 
+
+.result-div{
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+ .result-division-bottom {
+    height: 40%;
+    margin-bottom: 40px;
+  }
+}
+=======
 
 #footer {
 
@@ -107,4 +126,5 @@
 #title {
   font-size: 35px;
 }
+
 
