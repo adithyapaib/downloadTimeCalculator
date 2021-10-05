@@ -1,4 +1,4 @@
- 
+
   .dark input {
     color: black;
 }
@@ -27,7 +27,6 @@
 }
 .toggle{
     float: right;
-    margin: 10px 10px 0px 0px;
     font-size: 2em;
     text-align: center;
     cursor: pointer;
@@ -94,6 +93,7 @@
                 inset 2px 2px 3px rgba(10, 9, 9, 0.6);
 }
 
+
 #footer {
 
   margin-top:110px;
@@ -107,3 +107,4 @@
 #title {
   font-size: 35px;
 }
+
