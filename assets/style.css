@@ -43,32 +43,26 @@
   
   #submit {
     border: 1px solid white;
-
     background-color: rgb(216, 152, 33);
     color: white;
-    padding-bottom: 31px;
-    position: relative;
-    top: 65vh
-
-    width: 627px;
-    height:70px;
+    width: 350px;
     color: black;
-    font-size: 30px;
+    font-size: 20px;
+    padding: 10px;
+    display:block;
+    margin:auto;
   }
 
   #submit-dark{
     border: 1px solid black;
-
     background-color: rgb(130, 71, 224);
     box-shadow: -5px 5px 15px 4px rgb(78, 58, 119);
-    padding-bottom: 31px;
-    position: relative;
-    top: 65vh
-
     background-color: rgb(61, 36, 102);
-    width: 620px;
-    height:57px;
-
+    width: 350px;
+    font-size: 20px;
+    padding: 10px;
+    display:block;
+    margin:auto;
   }
   
   #submit-dark:hover{
@@ -149,4 +143,18 @@
   font-size: 35px;
 }
 
-
+.align-self{
+  align-self:flex-start;
+}
+.mr-0{
+  margin-left:0;
+}
+.align-center{
+  align-items: center;
+}
+#output{
+  max-width: 600px;
+  margin: auto;
+  position: relative;
+  top: -80px;
+}
