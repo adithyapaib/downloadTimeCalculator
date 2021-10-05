@@ -3,7 +3,7 @@ function best()
 {
     let speed = document.getElementById("speed").value;
     let size = document.getElementById("size").value;
-    if(speed=="" || size=="")
+    if(speed==="" || size==="")
     {
         alert("Please fill all the fields");
     }
@@ -44,6 +44,10 @@ function best()
         document.getElementById("filespeed").innerHTML = `${size}GB file: ${fileTime}`;
         document.getElementById("reload").innerHTML = `<br><br><a href="index.html" class="w-full text-center bg-black text-white p-4 rounded-md">CALCULATE NEW</a>`;
         document.getElementById("output").style.background='#07C962';
+        document.getElementById("reload").innerHTML = `<br><br><a href="index.html" class="w-full text-center bg-black text-white p-4 rounded-md"><button id="calculate">CALCULATE NEW</button></a>`;
+
+        document.getElementById("output").style.background='#42a4eb'
+        document.getElementById("output").style.background='#07C962'
         console.log(oneGBTime);
         console.log(fileTime);
     }

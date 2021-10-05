@@ -86,21 +86,21 @@ For support, email paiadithya26@gmail.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/adithyapaib/Neomorphic-PortfolioTemplate.svg?style=for-the-badge
-[contributors-url]: https://github.com/adithyapaib/Neomorphic-PortfolioTemplate/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/adithyapaib/Neomorphic-PortfolioTemplate.svg?style=for-the-badge
-[forks-url]: https://github.com/adithyapaib/Neomorphic-PortfolioTemplate/network/members
-[stars-shield]: https://img.shields.io/github/stars/adithyapaib/Neomorphic-PortfolioTemplate.svg?style=for-the-badge
-[stars-url]: https://github.com/adithyapaib/Neomorphic-PortfolioTemplate/stargazers
-[issues-shield]: https://img.shields.io/github/issues/adithyapaib/Neomorphic-PortfolioTemplate.svg?style=for-the-badge
-[issues-url]: https://github.com/adithyapaib/Neomorphic-PortfolioTemplate/issues
-[license-shield]: https://img.shields.io/github/license/adithyapaib/Neomorphic-PortfolioTemplate.svg?style=for-the-badge
-[license-url]: https://github.com/adithyapaib/Neomorphic-PortfolioTemplate/blob/master/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/adithyapaib/downloadTimeCalculator.svg?style=for-the-badge
+[contributors-url]: https://github.com/adithyapaib/downloadTimeCalculator/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/adithyapaib/downloadTimeCalculator.svg?style=for-the-badge
+[forks-url]: https://github.com/adithyapaib/downloadTimeCalculator/network/members
+[stars-shield]: https://img.shields.io/github/stars/adithyapaib/downloadTimeCalculator.svg?style=for-the-badge
+[stars-url]: https://github.com/adithyapaib/downloadTimeCalculator/stargazers
+[issues-shield]: https://img.shields.io/github/issues/adithyapaib/downloadTimeCalculator.svg?style=for-the-badge
+[issues-url]: https://github.com/adithyapaib/downloadTimeCalculator/issues
+[license-shield]: https://img.shields.io/github/license/adithyapaib/downloadTimeCalculator.svg?style=for-the-badge
+[license-url]: https://github.com/adithyapaib/downloadTimeCalculator/blob/master/LICENSE
 
 
 ## :handshake: Our Contributors
-<a href="https://github.com/adithyapaib/antiabuseapi/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=adithyapaib/antiabuseapi" />
+<a href="https://github.com/adithyapaib/downloadTimeCalculator/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=adithyapaib/downloadTimeCalculator" />
 </a>
 
  ## *Dont forget to star this repo and follow me!*
