@@ -22,46 +22,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <link href="./assets/helper.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="helper.css"> -->
 
-  <style>
-    .button {
-      background-color: darkgreen;
-      border-color: red;
-      color: white;
-      font-size: 15px;
-      /* padding:15px;
-      padding-top:10px;
-      padding-bottom:20px; */
-      width: 200px;
-      height: 30px;
-      border: 2px solid green;
-
-    }
-
-    #nav-item {
-
-      position: absolute;
-      right: 180px;
-    }
-
-    .center {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      /* margin: 0;
-  		position:absolute;
-  		top: 150%;
-  		left: 50%;
-  		-ms-transform: translate(-50%, -50%);
-  		transform: translate(-50%, -50%); */
-    }
-  </style>
 
 
 </head>
 
-<body onload="thememode()">
+<body>
 
   <header class="text-gray-400 bg-gray-900 body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -74,22 +40,19 @@
       </a>
       <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 
-        <a class="mr-5 hover:text-white" id="nav-item" href="indexonchange.html">Auto Calculate</a>
+        <a class="mr-5 hover:text-white" href="index.html">Main Page</a>
+        <a class="mr-5 hover:text-white" href="#">Second Link</a>
+        <a class="mr-5 hover:text-white" href="#">Third Link</a>
+        <a class="mr-5 hover:text-white" href="#">Fourth Link</a>
 
       </nav>
 
-
-
-      <button onclick="darkmode()" on click="check()" class="toggle"><i class="fas fa-adjust"></i></button>
-
+      <button onclick="darkmode()" class="toggle"><i class="fas fa-adjust"></i></button>
 
     </div>
   </header>
 
-
-
   <div class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
-
     <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
       <h2 class="font-semibold text-2xl text-center"><b>Download Time Predictor</b></h2>
       <form id="form" class="w-full px-4 space-y-9">
@@ -103,13 +66,13 @@
           <input type="number" min="1" placeholder="File size in GB" id="size"
             class="border-2 border-black rounded-md p-4">
         </div>
-        <div class="center">
-          <button id="submit" class="button" id="output">
-            Submit
-          </button>
+        <div class="btn-center">
+          <button type="button" id="submit" class="button id=" output">Submit</button>
         </div>
       </form>
-      <div id="output" class="bg-green-400 hidden rounded-md p-6 flex flex-col items-center justify-center">
+
+      <div id="output"
+        class="result-division-bottom bg-red-100 hidden rounded-md p-6 flex flex-col items-center justify-center">
         <div class="w-full mx-auto text-center">
           <p id="download" class="font-semibold"></p>
           <p id="sent"></p>
@@ -121,70 +84,26 @@
 
     </div>
   </div>
-  </div>
 
-
-  <div class="footer-basic">
+  <div class="footer-basic" id="footer">
     <footer>
-      <div class="social "><a id="change" href="https://github.com/adithyapaib" target="blank"><i
-            class=" icon ion-social-github"></i></a><a id="change2" href="https://www.linkedin.com/" target="blank"><i
-            class="icon ion-social-linkedin"></i></a><a id="change3" href="https://twitter.com/adithyapaib"
-          target="blank"><i class="icon ion-social-twitter"></i></a><a id="change4" href="facebook.com"
-          target="blank"><i class="icon ion-social-facebook"></i></a></div>
+      <div class="social "><a href="https://github.com/adithyapaib" target="blank"><i
+            class=" icon ion-social-github"></i></a><a href="https://www.linkedin.com/" target="blank"><i
+            class="icon ion-social-linkedin"></i></a><a href="https://twitter.com/adithyapaib" target="blank"><i
+            class="icon ion-social-twitter"></i></a><a href="facebook.com" target="blank"><i
+            class="icon ion-social-facebook"></i></a></div>
 
     </footer>
   </div>
 
-
+  <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
+  <script>
+    function darkmode() {
+      var element = document.body;
+      element.classList.toggle("dark");
+    }
+  </script>
+  <script src="assets/index.js"></script>
 </body>
-<script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
-<script>
-
-  function thememode() {
-    let theme = localStorage.getItem('theme');
-    if (!theme) {
-      theme = 'dark';
-      localStorage.setItem('theme', 'dark');
-    }
-    else if (theme == 'dark') {
-      var element = document.body;
-      element.classList.remove("dark");
-      document.getElementById('submit-dark').setAttribute('id', 'submit');
-    }
-    else {
-
-      var element = document.body;
-      element.classList.toggle("dark");
-      document.getElementById('submit').setAttribute('id', 'submit-dark');
-
-    }
-
-  }
-
-  function darkmode() {
-    let theme = localStorage.getItem('theme');
-    if (theme == 'light') {
-      theme = 'dark';
-      localStorage.setItem('theme', 'dark');
-      var element = document.body;
-      element.classList.remove("dark");
-      document.getElementById('submit-dark').setAttribute('id', 'submit');
-    }
-    else {
-      theme = 'light';
-      localStorage.setItem("theme", "light");
-      var element = document.body;
-      element.classList.toggle("dark");
-      document.getElementById('submit').setAttribute('id', 'submit-dark');
-
-    }
-
-  }
-
-
-
-
-</script>
-<script src="assets/index.js"></script>
 
 </html>

@@ -7,6 +7,22 @@
   bottom: 0;
   width: 100%;
   height: 100px;
+  margin-top: 10%;
+
+  padding: 40px 0;
+  background-color: #080808;
+  color: #f8f4f4;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+
+  /* position: sticky; */
+  /* sticky */
+  display: inline-block;
+  vertical-align: top;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
 
   /* padding:40px 0; */
   background-color: #080808;
@@ -62,16 +78,16 @@
 .footer-basic .social > a:hover {
   opacity: 0.9;
 }
-.footer-basic .social a#change:hover{
+.footer-basic .social a#change:hover {
   background: #aaa;
 }
-.footer-basic .social a#change2:hover{
-  background: #2867B2;
+.footer-basic .social a#change2:hover {
+  background: #2867b2;
 }
-.footer-basic .social a#change3:hover{
+.footer-basic .social a#change3:hover {
   background: #55acee;
 }
-.footer-basic .social a#change4:hover{
+.footer-basic .social a#change4:hover {
   background: #3b5998;
 }
 .footer-basic .copyright {
