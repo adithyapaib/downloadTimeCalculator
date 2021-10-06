@@ -44,7 +44,9 @@ input{
 .dark .toggle {
   background-color: #222;
 }
-
+.btn-center {
+  display: flex;
+}
 .button {
   background-color: darkgreen;
   border-color: red;
@@ -102,9 +104,10 @@ input{
   color: black;
   font-size: 32px;
 
-    border-radius: 16px;
-    margin-left: 10rem;
-    margin-top: 2rem;
+   border-radius: 16px;
+  margin: auto; // center the button
+/*     margin-left: 10rem; */
+/*     margin-top: 2rem; */
     box-shadow: 4px 4px 7px 1px #888888;
 }
 
