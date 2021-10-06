@@ -169,3 +169,7 @@
 #title {
   font-size: 35px;
 }
+input:focus{
+  background-color: aqua;
+  width: 500px
+}
