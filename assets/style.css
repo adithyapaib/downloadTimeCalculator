@@ -190,6 +190,9 @@ input{
     height: 40%;
     margin-bottom: 40px;
   }
+  body {
+      overflow-x: hidden;
+  }
 }
 
 #footer {
