@@ -6,6 +6,11 @@ label{
   font-weight: 480;
 }
 
+.main {
+    height: 78vh;
+}
+
+
 input{
   /* box-shadow:inset 0 0 5px 5px #888; */
   background: #FFFFFF;
