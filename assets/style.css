@@ -190,10 +190,13 @@ input{
     height: 40%;
     margin-bottom: 40px;
   }
+  body {
+      overflow-x: hidden;
+  }
 }
 
 #footer {
-  margin-top: 250px;
+    margin-top: 270px;
 }
 
 #header {

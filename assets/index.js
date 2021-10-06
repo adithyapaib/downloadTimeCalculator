@@ -1,4 +1,3 @@
-<<<<<<< HEAD
  document.getElementById("submit").addEventListener("click", best);
  function best(event) {
        event.preventDefault();
@@ -45,7 +44,7 @@
            console.log(fileTime)
      }
   }
-=======
+
 document.getElementById("submit").addEventListener("click", best);
 
 function best() {
@@ -134,4 +133,4 @@ function best() {
     console.log(fileTime);
   }
 }
->>>>>>> c95a801d9038090fd521abacc9987ddabe2c56fd
+
