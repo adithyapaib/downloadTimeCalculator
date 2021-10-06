@@ -8,7 +8,7 @@
 }
 .dark button {
   background-color: black;
-  color: white;
+  color: orange;
 }
 .dark .confirmSubmit:hover {
   background-color: #45aaf2;
