@@ -1,14 +1,14 @@
-label{
+label {
   display: inline-block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 20px;
   /* text-decoration: solid; */
   font-weight: 480;
 }
 
-input{
+input {
   /* box-shadow:inset 0 0 5px 5px #888; */
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.4);
   border-radius: 25px;
   border: 2px solid rgba(0, 0, 0, 0.151);
@@ -16,7 +16,7 @@ input{
   outline: none;
 }
 
-.head{
+.head {
   text-align: center;
   /* font-family: mo/nte; */
   font-size: 40px;
@@ -99,16 +99,18 @@ input{
   position: relative;
 
   /* width: 627px; */
-  width: 300px;
-  height: 70px;
+  width: 50%;
+  height: 30%;
+  min-width: 150px;
   color: black;
-  font-size: 32px;
+  font-size: 2.3rem;
+  border-radius: 16px;
+  /* margin-left: 10rem;
+    margin-top: 2rem; */
+  display: block;
+  margin: auto;
+  box-shadow: 4px 4px 7px 1px #888888;
 
-   border-radius: 16px;
-  margin: auto; // center the button
-/*     margin-left: 10rem; */
-/*     margin-top: 2rem; */
-    box-shadow: 4px 4px 7px 1px #888888;
 }
 
 #submit-dark {
