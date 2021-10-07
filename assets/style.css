@@ -186,10 +186,12 @@ input {
 .result-div {
   display: flex;
 }
-
+#footer {
+  margin-top: 300px;
+}
 @media only screen and (max-width: 600px) {
   .result-division-bottom {
-    height: 40%;
+    
     margin-bottom: 40px;
   }
   body {
@@ -197,9 +199,19 @@ input {
   }
 }
 
-#footer {
-    margin-top: 270px;
+@media only screen and (max-width: 320px) {
+  .result-division-bottom {
+    
+    margin-bottom: 40px;
+  }
+  body {
+      overflow-x: hidden;
+  }
+  #footer {
+    margin-top: 424px;
 }
+}
+
 
 #header {
   margin-bottom: 110px;
