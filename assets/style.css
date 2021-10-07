@@ -44,7 +44,9 @@ input {
 .dark .toggle {
   background-color: #222;
 }
-
+.btn-center {
+  display: flex;
+}
 .button {
   background-color: darkgreen;
   border-color: red;
@@ -102,13 +104,13 @@ input {
   min-width: 150px;
   color: black;
   font-size: 2.3rem;
-
   border-radius: 16px;
   /* margin-left: 10rem;
     margin-top: 2rem; */
   display: block;
   margin: auto;
   box-shadow: 4px 4px 7px 1px #888888;
+
 }
 
 #submit-dark {
@@ -190,10 +192,13 @@ input {
     height: 40%;
     margin-bottom: 40px;
   }
+  body {
+      overflow-x: hidden;
+  }
 }
 
 #footer {
-  margin-top: 150px;
+    margin-top: 270px;
 }
 
 #header {
