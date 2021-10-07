@@ -60,7 +60,25 @@ input {
   height: 30px;
   border: 2px solid green;
 }
+#input-container{
+  overflow: scroll;
+  scrollbar-width: none;
 
+}
+#input-container::-webkit-scrollbar{
+  display: none;
+}
+#calculate{
+  padding: 1.2rem;
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  transition: all 600ms ease;
+}
+#calculate:hover{
+  background-color: #fff;
+  color: #000;
+}
 #submit:hover {
   background: linear-gradient(
     to right,
@@ -198,7 +216,7 @@ input {
 }
 
 #footer {
-    margin-top: 270px;
+    margin-top: 0;
 }
 
 #header {
