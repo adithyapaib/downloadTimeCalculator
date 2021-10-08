@@ -53,10 +53,10 @@
         border: 5px green;
         border-radius: 10px;
         background-color: rgb(197, 255, 197);
-        width: 50%;
+        width: 70%;
         height: 80vh;
-        margin-top: 110px;
-        margin-bottom: 0%;
+        /* margin-top: 110px;
+        margin-bottom: 0%; */
     }
     a {
         color: #2ac8f8;
@@ -119,16 +119,14 @@
         border: 1px solid white;
         background-color: rgb(240, 144, 0);
         position: relative;
-        width: 35%;
-        height: 55%;
-        min-width: 150px;
         color: white;
-        font-size: 2.3rem;
+        font-size: 2rem;
         border-radius: 38px;
         display: block;
         margin: auto;
-        margin-top: 60px;
-        padding: -8px;
+        margin-top: 0px;
+        /* margin-top: 50px; */
+        padding: 6px;
         box-shadow: 4px 4px 7px 1px #888888;
     }
     #submit-dark {
@@ -233,17 +231,9 @@
         text-align: center;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    @media only screen and (max-width: 600px) {
-        .result-division-bottom {
-            height: 40%;
-            margin-bottom: 40px;
-        }
-        body {
-            overflow-x: hidden;
-        }
-    }
+
     #footer {
-        margin-top: 270px;
+        margin-top: 200px;
     }
     #header {
         margin-bottom: 110px;
@@ -253,62 +243,52 @@
         font-size: 35px;
     }
 
-         /*making it responsive*/
-@media only screen and (max-width: 770px) {
-    #title{
-        display: flex;
-        padding-left: 45px;
-        font-size: 1.2rem;
-        text-align: center;
+    @media only screen and (max-width: 600px) {
+        .result-division-bottom {
+            height: 40%;
+            margin-bottom: 40px;
+        }
+        body {
+            overflow-x: hidden;
+        }
     }
-  nav {
-    margin: 2%;
-    padding: 2%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 2px blue;
-    background: rgb(3, 65, 90);
-    border-radius: 8px;
-  }
-  #first{
-      margin-left: 43px;margin-bottom: 7px;
-}
-#second{
-      margin-left: 40px ;margin-bottom: 7px;
-}
-#third{
-    margin-bottom: 7px;
-}
-.container2 {
-    
-    width: 70%;
-    height: 80vh;
-    margin-top: 95px;margin-bottom: 0%;margin-left: 0%; 
-  }
-  .head {
-    text-shadow: 4px 4px 4px rgba(250, 155, 77, 0.527);
-    margin-top: 10px;
-    text-align: center;
-    font-size: 1.7rem;
-    color: rgb(240, 144, 0);
-    font-weight: 700;
-  }
-  #submit {
-    width: 5vw;
-    height: 7vh;
-    min-width: 150px;
-    color: white;
-    font-size: 1.7rem;
-    border-radius: 38px;
-    display: block;
-    margin: auto;
-    margin-top: 0px;
-    padding: 6px;
-    box-shadow: 4px 4px 7px 1px #888888;
-  }
-}
+
+         /*making it responsive*/
+    @media only screen and (max-width: 770px) {
+        #title{
+            display: flex;
+            padding-left: 45px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        nav {
+            margin: 2%;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px blue;
+            background: rgb(3, 65, 90);
+            border-radius: 8px;
+        } 
+
+        .head {
+            margin-top: 10px;
+            font-size: 1.7rem;
+        }
+    }
+
+    #first{
+        margin-left: 43px;margin-bottom: 7px;
+    }
+    #second{
+        margin-left: 40px ;margin-bottom: 7px;
+    }
+    #third{
+        margin-bottom: 7px;
+    }
+
 </style>
 <!---------------------------------------------------------------------CSS ENDS HERE-------------------------------------------------------------------------------->
 
@@ -319,7 +299,7 @@
 
   <header class="text-gray-400 bg-gray-900 body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-white mb-lg-1 mb-4" href="index.html">
+      <a class="flex title-font font-medium items-center text-white mb-lg-1 mb-4 ml-lg-0 ml-5" href="index.html">
         <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
             d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
@@ -328,8 +308,8 @@
       </a>
       <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 
-        <a class="mr-5 hover:text-white" href="index.html">Main Page</a>
-        <a class="mr-5 hover:text-white" href="about.html">About Us</a>
+        <a class=" hover:text-white" href="index.html">Main Page</a>
+        <a class="mr-5 ml-5 hover:text-white" href="about.html">About Us</a>
         <a class="hover:text-white" href="#">Third Link</a>
         <a class="mr-5 ml-5 hover:text-white" href="#">Fourth Link</a>
 
@@ -342,20 +322,7 @@
 
   <div id = "input-container" class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
     <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
-      <h2 class="head">Download Time Predictor</h2>
-      <form id="form" class="w-full px-4 space-y-9">
-        <div class="flex flex-col gap-y-2">
-          <label>Enter your Internet speed (MBps)</label>
-          <input type="number" min="1" placeholder="Internet speed in Mbps" id="speed"
-            class="p-4">
-        </div>
-        <div class="flex flex-col gap-y-2">
-          <label>File size (GB)</label>
-          <input type="number" min="1" placeholder="File size in GB" id="size"
-            class="p-4">
-
-        </div>
-    </header>
+      
     <main>
         <div class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
             <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
