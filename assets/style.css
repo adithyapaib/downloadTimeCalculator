@@ -1,14 +1,102 @@
-label{
+label {
   display: inline-block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-size: 20px;
   /* text-decoration: solid; */
   font-weight: 480;
 }
+/* <!-- changes done -->*/
 
+.box {
+    width: 450px;
+    max-width: 100vw;
+    max-height: fit-content;
+    height: 600px;
+    margin: 3em;
+    box-shadow: 5px 5px 30px #dddada, inset -5px -5px 10px #0000000c;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+
+.box3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: revert;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    height: 150px;
+    margin-top: 110px;
+    align-items: center;
+}
+
+.box3 ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.box3 ul li {
+    margin: 15px;
+}
+
+.box3 ul li a {
+    color: black;
+    font-size: 3em;
+}
+
+.box3 ul li a {
+    color: rgb(0, 8, 1);
+    font-size: 3em;
+    padding: 12px;
+}
+
+.box3 ul .github a:hover {
+    color: rgb(255, 254, 254);
+    background-color: rgba(44, 37, 37, 0.877);
+    box-shadow: 0px 3px 10px rgb(68, 67, 67);
+}
+
+.box3 ul .linkedin a:hover {
+    color: #2867B2;
+    background-color: #daedff;
+    box-shadow: 0px 3px 10px rgb(87, 155, 223);
+}
+
+.box3 ul .twitter a:hover {
+    color: #55acee;
+    background-color: #6dbaf53b;
+    box-shadow: 0px 3px 10px rgb(30, 125, 219);
+}
+
+.box3 ul .gmail a:hover {
+    color: #EA4335;
+    background-color: #7e188134;
+    box-shadow: 3px 3px 10px #c4622ad3, -1px 0 .5em #f4e242b2;
+}
+
+.box3 ul li a:hover {
+    color: #f53f2b;
+    filter: drop-shadow(0px 18px 18px rgba(207, 44, 44, 0.904));
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+/* <!-- changes done -->*/
 input{
+
   /* box-shadow:inset 0 0 5px 5px #888; */
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.4);
   border-radius: 25px;
   border: 2px solid rgba(0, 0, 0, 0.151);
@@ -16,7 +104,7 @@ input{
   outline: none;
 }
 
-.head{
+.head {
   text-align: center;
   /* font-family: mo/nte; */
   font-size: 40px;
@@ -60,7 +148,25 @@ input{
   height: 30px;
   border: 2px solid green;
 }
+#input-container{
+  overflow: scroll;
+  scrollbar-width: none;
 
+}
+#input-container::-webkit-scrollbar{
+  display: none;
+}
+#calculate{
+  padding: 1.2rem;
+  background-color: black;
+  color: white;
+  border-radius: 40px;
+  transition: all 600ms ease;
+}
+#calculate:hover{
+  background-color: #fff;
+  color: #000;
+}
 #submit:hover {
   background: linear-gradient(
     to right,
@@ -99,16 +205,18 @@ input{
   position: relative;
 
   /* width: 627px; */
-  width: 300px;
-  height: 70px;
+  width: 50%;
+  height: 30%;
+  min-width: 150px;
   color: black;
-  font-size: 32px;
+  font-size: 2.3rem;
+  border-radius: 16px;
+  /* margin-left: 10rem;
+    margin-top: 2rem; */
+  display: block;
+  margin: auto;
+  box-shadow: 4px 4px 7px 1px #888888;
 
-   border-radius: 16px;
-  margin: auto; // center the button
-/*     margin-left: 10rem; */
-/*     margin-top: 2rem; */
-    box-shadow: 4px 4px 7px 1px #888888;
 }
 
 #submit-dark {
@@ -184,20 +292,82 @@ input{
 .result-div {
   display: flex;
 }
-
+#footer {
+  margin-top: 300px;
+}
 @media only screen and (max-width: 600px) {
   .result-division-bottom {
-    height: 40%;
+    
     margin-bottom: 40px;
   }
   body {
       overflow-x: hidden;
   }
+  /* changes done */
+    .box {
+        width: 450px;
+        max-width: 100vw;
+        max-height: fit-content;
+        height: 600px;
+        margin: 3em;
+        box-shadow: 5px 5px 30px #dddada, inset -5px -5px 10px #0000000c;
+        text-align: center;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        line-height: 1.6;
+        padding-bottom: 20px;
+    }
+    .box3 {
+        display: flex;
+        justify-content: center;
+        flex-wrap: revert;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        height: 150px;
+        margin-top: 110px;
+        align-items: center;
+    }
+    .box3 ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: inherit;
+        list-style: none;
+    }
+    .box3 ul li {
+        margin: 15px;
+    }
+    .box3 ul li a {
+        color: black;
+        font-size: 3em;
+    }
+    .box3 ul li a {
+        color: black;
+        font-size: 3em;
+        padding: 12px;
+    }
+    /* changes done */
 }
 
-#footer {
-    margin-top: 270px;
+
+@media only screen and (max-width: 320px) {
+  .result-division-bottom {
+    
+    margin-bottom: 40px;
+  }
+  body {
+      overflow-x: hidden;
+  }
+  #footer {
+    margin-top: 424px;
 }
+
+
 
 #header {
   margin-bottom: 110px;
