@@ -125,7 +125,7 @@ function best() {
 
     document.getElementById(
       "reload"
-    ).innerHTML = `<br><br><a href="index.html" class="w-full text-center bg-black text-white p-4 rounded-md"><button id="calculate">CALCULATE NEW</button></a>`;
+    ).innerHTML = `<br><br><a href="index.html"><button id="calculate">CALCULATE NEW</button></a>`;
 
     document.getElementById("output").style.background = "#42a4eb";
     document.getElementById("output").style.background = "#07C962";
