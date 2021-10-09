@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -8,15 +8,20 @@
     <meta name="theme-color" content="#000000">
     <meta name="description" content="Download Time Calculator">
     <meta name="keywords" content="Download Calculator, Download Time Calculator, TimeCalculator">
-    <link href="https://img.icons8.com/emoji/48/000000/owl-emoji.png" rel="shortcut icon"type=image/x-icon>
+    <link href="https://img.icons8.com/emoji/48/000000/owl-emoji.png" rel="shortcut icon" type=image/x-icon>
     <meta content="https://img.icons8.com/emoji/48/000000/owl-emoji.png" property=og:image>
     <link href="./assets/style.css" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <title>Download Time Calculator 🌎</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css" integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"
+        integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"
+        integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
     <link href="./assets/helper.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="helper.css"> -->
 </head>
@@ -43,7 +48,317 @@
       
     </div>
   </header>
+=======
+</head>
 
+
+<!---------------------------------------------CSS STARTS HERE----------------------------------------------------------->
+<style>
+    body {
+        background: rgb(157, 206, 247);
+    }
+    .ml-1,
+    .mx-1 {
+        margin-left: -5.75rem !important;
+    }
+    .p-5 {
+        padding: 2rem !important;
+    }
+    .p-4 {
+        padding: 1rem !important;
+    }
+    .ml-3,
+    .mx-3 {
+        font-size: 1.6rem;
+        margin-left: 1rem !important;
+    }
+    .ml-3,
+    .mx-3 {
+        font-size: 1.6rem;
+        margin-left: 1rem !important;
+        margin-right: 1.8rem;
+    }
+    .container2 {
+        border: 5px green;
+        border-radius: 10px;
+        background-color: rgb(197, 255, 197);
+        width: 70%;
+        height: 80vh;
+        /* margin-top: 110px;
+        margin-bottom: 0%; */
+    }
+    a {
+        color: #2ac8f8;
+        font-size: 1.3rem;
+        text-decoration: none;
+        background-color: transparent;
+    }
+    label {
+        display: inline-block;
+        margin-bottom: 0.5rem;
+        margin-left: 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    input {
+        background: #ffffff;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.151);
+        font-size: 1rem;
+        outline: none;
+        padding: 0%;
+    }
+    .head {
+        text-shadow: 4px 4px 4px rgba(250, 155, 77, 0.527);
+        margin-top: 0px;
+        text-align: center;
+        font-size: 3rem;
+        color: rgb(240, 144, 0);
+        font-weight: 700;
+    }
+    .btn-center {
+        display: flex;
+    }
+    .button {
+        background-color: darkgreen;
+        border-color: red;
+        color: white;
+        font-size: 15px;
+        width: 200px;
+        height: 30px;
+        border: 2px solid green;
+    }
+    #submit:hover {
+        background: linear-gradient(to left,
+                rgb(243, 100, 100) 50%,
+                rgb(100, 98, 98) 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.5s ease-out;
+        box-shadow: 5px 5px 12px 1px rgb(48, 45, 45);
+    }
+    .toggle {
+        float: right;
+        font-size: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+    #submit {
+        border: 1px solid white;
+        background-color: rgb(240, 144, 0);
+        position: relative;
+        color: white;
+        font-size: 2rem;
+        border-radius: 38px;
+        display: block;
+        margin: auto;
+        margin-top: 0px;
+        /* margin-top: 50px; */
+        padding: 6px;
+        box-shadow: 4px 4px 7px 1px #888888;
+    }
+    #submit-dark {
+        border: 1px solid black;
+        background-color: rgb(130, 71, 224);
+        box-shadow: -5px 5px 15px 4px rgb(78, 58, 119);
+        padding-bottom: 31px;
+        position: relative;
+        top: 65vh;
+        background-color: rgb(61, 36, 102);
+        width: 620px;
+        height: 57px;
+    }
+    #submit-dark:hover {
+        background: linear-gradient(to right,
+                rgb(42, 136, 165) 50%,
+                rgb(76, 53, 179) 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.5s ease-out;
+        transform: scale(1.3);
+        box-shadow: 2px 8px 20px 4px rgb(41, 105, 165);
+    }
+    .confirmSubmit {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        font-size: 1rem;
+        text-align: center;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: transform 0.2s;
+        background-color: #145c9e;
+        background-image: linear-gradient(to top left,
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2) 30%,
+                rgba(0, 0, 0, 0));
+        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+            inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+        outline: none;
+    }
+    .confirmSubmit:hover,
+    .confirmSubmit:focus {
+        background-color: #145c9e;
+        transform: scale(1.02);
+        font-size: large;
+        color: #000;
+        outline: none;
+    }
+    .confirmSubmit:active {
+        box-shadow: inset -2px -2px 3px rgba(95, 93, 93, 0.6),
+            inset 2px 2px 3px rgba(10, 9, 9, 0.6);
+    }
+    .gap-y-12 {
+        height: 0vh;
+        position: relative;
+        top: -265px;
+    }
+    .result-div {
+        display: flex;
+    }
+    .social a:hover {
+        color: gray;
+    }
+    .social {
+        margin-bottom: 80px;
+        margin-top: 0%;
+    }
+    .social a {
+        border: 2px red;
+        background: cornsilk;
+        border-radius: 50%;
+        width: 50px;
+        padding: 10px;
+        margin: 15px;
+        color: black;
+        font-size: 3rem;
+    }
+    #contact {
+        margin-bottom: 27px;
+        font-size: 1.7rem;
+        color: rgb(49, 49, 49);
+        font-weight: bold;
+        word-spacing: 3px;
+    }
+    .dark {
+        background-color: rgb(29, 29, 29);
+    }
+    #headerr-dark {
+        background-color: rgb(245, 237, 237);
+        color: rgb(37, 37, 37);
+    }
+    #copyright {
+        position: sticky;
+        padding: 10px;
+        font-size: 14px;
+        background-color: rgb(8, 8, 8);
+        color: rgb(238, 237, 231);
+        padding-top: 9px 20px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #footer {
+        margin-top: 200px;
+    }
+    #header {
+        margin-bottom: 110px;
+        height: 120px;
+    }
+    #title {
+        font-size: 35px;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .result-division-bottom {
+            height: 40%;
+            margin-bottom: 40px;
+        }
+        body {
+            overflow-x: hidden;
+        }
+    }
+
+         /*making it responsive*/
+    @media only screen and (max-width: 770px) {
+        #title{
+            display: flex;
+            padding-left: 45px;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+        nav {
+            margin: 2%;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px blue;
+            background: rgb(3, 65, 90);
+            border-radius: 8px;
+        } 
+
+        .head {
+            margin-top: 10px;
+            font-size: 1.7rem;
+        }
+    }
+
+    #first{
+        margin-left: 43px;margin-bottom: 7px;
+    }
+    #second{
+        margin-left: 40px ;margin-bottom: 7px;
+    }
+    #third{
+        margin-bottom: 7px;
+    }
+
+</style>
+<!---------------------------------------------------------------------CSS ENDS HERE-------------------------------------------------------------------------------->
+
+
+
+<!-------------------------------------------------------------------BODY STARTS HERE------------------------------------------------------------------------------->
+<body>
+
+
+  <header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-white mb-lg-1 mb-4 ml-lg-0 ml-5" href="index.html">
+        <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+        </svg>
+        <span class="ml-3 text-xl">Download Time Predictor</span>
+      </a>
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+
+
+        <a class=" hover:text-white" href="index.html">Main Page</a>
+        <a class="mr-5 ml-5 hover:text-white" href="about.html">About Us</a>
+
+        <a class="mr-5 hover:text-white" href="index.html">Main Page</a>
+        <a class="mr-5 hover:text-white" href="about.html">About Us</a>
+
+        <a class="hover:text-white" href="#">Third Link</a>
+        <a class="mr-5 ml-5 hover:text-white" href="#">Fourth Link</a>
+
+      </nav>
+
+      <button onclick="darkmode()" class="toggle"><i class="fas fa-adjust"></i></button>
+
+
+    </div>
+  </header>
+
+  <div id = "input-container" class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+    <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
 
 
     <div class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
@@ -70,12 +385,55 @@
                     <p id="onespeed"></p>
                     <p id="filespeed"></p>
                     <p id="reload"></p>
-                </div>
-            </div>
+      
+
+      <h2 class="head">Download Time Predictor</h2>
+      <form id="form" class="w-full px-4 space-y-9">
+        <div class="flex flex-col gap-y-2">
+          <label>Enter your Internet speed (MBps)</label>
+          <input type="number" min="1" placeholder="Internet speed in Mbps" id="speed"
+            class="p-4">
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <label>File size (GB)</label>
+          <input type="number" min="1" placeholder="File size in GB" id="size"
+            class="p-4">
 
         </div>
-      </div>
-    </div>
+    </header>
+
+    <main>
+        <div class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+            <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
+                <h2 class="head">Download Time Predictor</h2>
+                <form id="form" class="w-full px-4 space-y-9">
+                    <div class="flex flex-col gap-y-2">
+                        <label>Enter your Internet speed (Mbps)</label>
+                        <input type="number" min="1" placeholder="Internet speed in Mbps" id="speed" class="p-4">
+                    </div>
+                    <div class="flex flex-col gap-y-2">
+                        <label>File size (GB)</label>
+                        <input type="number" min="1" placeholder="File size in GB" id="size" class="p-4">
+                    </div>
+                    <div class="btn-center">
+                        <button type="button" id="submit" class="button">Submit</button>
+                    </div>
+                </form>
+
+                <div id="output"
+                    class="result-division-bottom bg-red-100 hidden rounded-md p-6 flex flex-col items-center justify-center">
+                    <div class="w-full mx-auto text-center">
+                        <p id="download" class="font-semibold"></p>
+                        <p id="sent"></p>
+                        <p id="onespeed"></p>
+                        <p id="filespeed"></p>
+                        <p id="reload"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
 
 
     <div class="footer-basic">
@@ -91,15 +449,190 @@
     src="https://kit.fontawesome.com/dde7c31825.js"
     crossorigin="anonymous"
   ></script>
+
+  <!-- changes done -->
+    <div class="footer-basic box box3 " id="footer">
+        <div>
+            <ul class="Social-links">
+                <!--Enter your profile links here-->
+                <li class="github"><a href="https://github.com/adithyapaib" target="_blank"><i class="fab fa-github iconn"></i></a></li>
+                <li class="linkedin"><a href="https://www.linkedin.com/in/adithyapaib" target="_blank"><i class="fab fa-linkedin-in iconn"></i></a></li>
+                <li class="gmail"><a href="mailto: paiadithya26@gmail.com" target="_blank"><i class="fas fa-at iconn"></i></a></li>
+                <li class="twitter"><a href="https://twitter.com/adithyapaib" target="_blank"><i class="fab fa-twitter  iconn"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- changes done -->
+
+
+  <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
+
   <script>
     function darkmode() {
-
-    var element = document.body;
-    element.classList.toggle("dark");
-    document.getElementById('submit').setAttribute('id', 'submit-dark');
-  
-
+      var element = document.body;
+      element.classList.toggle("dark");
     }
   </script>
   <script src="assets/index.js"></script>
+</body>
+
+
+        <footer id="copyright">
+            <div class="center">
+                Copyright &copy;2021.All rights reserved!
+            </div>
+        </footer>
+    </main>
+
+<!----------------------------------------------------------------JAVASCRIPT STRATS HERE--------------------------------------------------------------------------------->
+    <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
+
+    <script>
+        function darkmode() {
+            var element = document.body;
+            element.classList.toggle("dark");
+            document.getElementById("submit").style.backgroundColor = "rgb(130, 71, 224)";
+        }
+    </script>
+    <script>
+        document.getElementById("submit").addEventListener("click", best);
+        function best(event) {
+            event.preventDefault();
+            let speed = document.getElementById("speed").value;
+            let size = document.getElementById("size").value;
+            if (speed == "" || size == "") {
+                alert("Please fill all the fields");
+            }
+            else {
+                let downloadSpeed = speed;
+                let oneGB = parseFloat(1024 / downloadSpeed);
+                let oneGBhours = Math.floor(oneGB / 60 / 60);
+                let oneGBminutes = Math.floor(oneGB / 60) - (oneGBhours * 60);
+                let oneGBseconds = Math.round(oneGB % 60, 3);
+                let oneGBTime;
+                let minutes;
+                minutes = 'mins';
+                if (parseInt(oneGBminutes) == 1)
+                    minutes = `min`
+                oneGBTime = `${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `
+                if (oneGBhours == 0)
+                    oneGBTime = `${oneGBminutes}${minutes}, ${oneGBseconds}s `
+                let file = (parseInt(size) * 1024) / downloadSpeed;
+                let fileHours = Math.floor(file / 60 / 60);
+                let fileMinutes = Math.floor(file / 60) - (fileHours * 60);
+                let fileSeconds = Math.round(file % 60, 3);
+                let fileTime;
+                minutes = 'mins';
+                if (parseInt(fileMinutes) == 1)
+                    minutes = `min`
+                fileTime = `${fileHours}hrs, ${fileMinutes}${minutes}, ${fileSeconds}s `;
+                document.getElementById('output').style.display = 'block'
+                document.getElementById("download").innerHTML = `Download speed: ${downloadSpeed}MBps`;
+                document.getElementById("sent").innerHTML = `Approximate time required to download`;
+                document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
+                document.getElementById("filespeed").innerHTML = `${size}GB file: ${fileTime}`;
+                document.getElementById("reload").innerHTML = `<br><br><button id="Calculate" onclick="document.location='index.html'">CALCULATE NEW</button>`;
+                document.getElementById("output").style.background = '#07C962'
+                document.getElementById("Calculate").style.background = '#000000'
+                document.getElementById("Calculate").style.color = '#FFFFFF'
+                document.getElementById("Calculate").style.padding = '24px'
+                document.getElementById("Calculate").style.borderRadius = '12px'
+                console.log(oneGBTime);
+                console.log(fileTime)
+            }
+        }
+
+        document.getElementById("submit").addEventListener("click", best);
+
+        function best() {
+            let speed = document.getElementById("speed").value;
+            let size = document.getElementById("size").value;
+            if (speed === "" || size === "") {
+                alert("Please fill all the fields");
+            } else {
+                let downloadSpeed = speed;
+                let oneGB = parseFloat(1024 / downloadSpeed);
+                let oneGBhours = Math.floor(oneGB / 60 / 60);
+                let oneGBminutes = Math.floor(oneGB / 60) - oneGBhours * 60;
+                let oneGBseconds = Math.round(oneGB % 60, 3);
+                var Day = 0;
+                var Week = 0;
+
+                if (parseInt(oneGBhours) > 24) Day = parseInt(oneGBhours) / 24;
+                if (parseInt(Day) > 7) Week = parseInt(Day) / 7;
+
+                let oneGBTime;
+                let minutes;
+                minutes = "mins";
+
+                if (parseInt(oneGBminutes) == 1) minutes = `min`;
+                oneGBTime = `${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
+
+                if (oneGBhours == 0)
+                    oneGBTime = `${oneGBminutes}${minutes}, ${oneGBseconds}s `;
+
+                if (Day > 0)
+                    oneGBTime = `${parseInt(
+                        Day
+                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
+
+                if (parseInt(Day) > 0)
+                    oneGBTime = `${parseInt(
+                        Day
+                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
+
+                if (parseInt(Week) > 0)
+                    oneGBTime = `${parseInt(Week)}weeks, ${parseInt(
+                        Day
+                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
+
+                let file = (parseInt(size) * 1024) / downloadSpeed;
+                let fileDay =
+                    Math.floor(file / 60 / 60) > 24 ? Math.floor(file / 60 / 60) / 24 : 0;
+                let fileWeek = parseInt(fileDay) > 7 ? fileDay / 7 : 0;
+                let fileHours = Math.floor(file / 60 / 60);
+                let fileMinutes = Math.floor(file / 60) - fileHours * 60;
+                let fileSeconds = Math.round(file % 60, 3);
+                let fileTime;
+                minutes = "mins";
+
+                if (parseInt(fileMinutes) == 1) minutes = `min`;
+
+                fileTime = `${parseInt(fileWeek)}weeks,
+     ${parseInt(fileDay)}days,
+     ${fileHours}hrs, 
+     ${fileMinutes}${minutes}, 
+     ${fileSeconds}s `;
+
+                document.getElementById("output").style.display = "block";
+
+                document.getElementById(
+                    "download"
+                ).innerHTML = `Download speed: ${downloadSpeed}MBps`;
+
+                document.getElementById(
+                    "sent"
+                ).innerHTML = `Approximate time required to download`;
+
+                document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
+
+                document.getElementById(
+                    "filespeed"
+                ).innerHTML = `${size}GB file: ${fileTime}`;
+
+                document.getElementById(
+                    "reload"
+                ).innerHTML = `<br><br><a href="index.html" class="w-full text-center bg-black text-white p-4 rounded-md"><button id="calculate">CALCULATE NEW</button></a>`;
+
+                document.getElementById("output").style.background = "#42a4eb";
+                document.getElementById("output").style.background = "#07C962";
+                console.log(oneGBTime);
+                console.log(fileTime);
+            }
+        }</script>
+<!----------------------------------------------------------------JAVASCRIPT ENDS HERE------------------------------------------------------------------------------>
+ 
+</body>
+<!-------------------------------------------------------------------BODY ENDS HERE------------------------------------------------------------------------------>
+ 
 </html>
