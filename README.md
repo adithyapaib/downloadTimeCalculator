@@ -6,8 +6,8 @@ built on html css and js
 
 ## HACKTOBERFEST IMPORTANT NOTICE
 
-#### Please make sure your are commmiting your changes to the right branch 
-#### If you PR to the wrong branch then there will be merege conflicts !!!
+#### Please make sure you are committing your changes to the right branch 
+#### If you PR to the wrong branch then there will be merge conflicts !!!
 For any Queries pls reach me via https://www.linkedin.com/in/adithyapaib/
 
 ## Demo
