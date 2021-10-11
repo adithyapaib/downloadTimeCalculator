@@ -209,12 +209,36 @@
         font-size: 3rem;
     }
     #contact {
-        margin-bottom: 27px;
-        font-size: 1.7rem;
-        color: rgb(49, 49, 49);
-        font-weight: bold;
-        word-spacing: 3px;
+       text-decoration: underline;
+       text-shadow: 2px 2px 2px black;
+       margin-top: 7px;
+       margin-bottom: 25px;
     }
+    .namemt-3{
+        font-family: serif;
+        color: darkorchid;
+        text-shadow: 2px 2px 2px darkorchid;
+        animation:blink-animation 1s steps(5,start) infinite;
+    -webkit-animation:blink-animation 1s steps(5,start) infinite;
+    }
+    @keyframes blink-animation{
+        to{
+            visibility: hidden;
+        }
+    }
+    @-webkit-keyframes blink-animation{
+        to{
+            visibility: hidden;
+        }
+    }
+    .programtext{
+        font-family: serif;
+        font-size:22px;
+        margin-left: 200px;
+        margin-right: 110px;
+    }
+
+
     .dark {
         background-color: rgb(29, 29, 29);
     }
@@ -341,22 +365,22 @@
 
       <div class="w-75 m-auto ">
         <div class="text-center program-heading">
-            <center id="contact"><h1> ** ABOUT US ** </h1> </center>
+            <center id="contact"><h1> --ABOUT US-- </h1> </center>
     </div>
-    <div class="text-center bg-warning rounded p-5" >
+    <div class="text-center" >
                 <div class="m12">
                     
                     <img
                         class="m-auto"
-                        src="https://img.icons8.com/emoji/48/000000/owl-emoji.png"
+                        src="https://c.tenor.com/dJfugj3uAwEAAAAj/love-cute.gif"
                     />
-                    <h1 class="name mt-3">Download Time Predictor</h1>
+                    <h1 class="namemt-3">Download Time Predictor</h1>
                     <hr>
                 </div>
                 <div class="right-text1">
-                    <h3 class="fs-5 lh-lg program-text">
+                    <h4 class="fs-5 lh-lg programtext">
                         Download Time Predictor is a wonderful website for users who want to estimate the time required for the file to get download based on the internet speed. The user just need to mention the internet speed and file size, Our website will calculate the approx time require for downloading the file. 
-                    </h3>
+                    </h4>
                 </div>
             </div>
     </div>
@@ -365,7 +389,7 @@
       <div class="footer-basic" id="footer">
         <footer>
             <div class="social">
-                <center id="contact">** CONTACT ME ** </center>
+                <center id="contact"><h1>--CONTACT ME-- </center>
                 <center>
                     <a style="padding: 10px 12px;" href="https://github.com/adithyapaib" target="blank"><i
                             class=" icon ion-social-github hover:text-gray-800"></i></a><a style="padding: 10px 14px;"
