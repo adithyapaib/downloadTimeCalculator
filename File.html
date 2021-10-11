@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 
+
 <!---------------------------------------------CSS STARTS HERE----------------------------------------------------------->
 <style>
     body {
@@ -54,13 +55,9 @@
         border-radius: 10px;
         background-color: rgb(197, 255, 197);
         width: 70%;
-        height: 90vh;
+        height: 80vh;
         /* margin-top: 110px;
         margin-bottom: 0%; */
-    }
-    .container2, input{
-        margin-left: 10px;
-        margin-right: 10px;
     }
     a {
         color: #2ac8f8;
@@ -86,7 +83,7 @@
     }
     .head {
         text-shadow: 4px 4px 4px rgba(250, 155, 77, 0.527);
-        margin: 10px;
+        margin-top: 0px;
         text-align: center;
         font-size: 3rem;
         color: rgb(240, 144, 0);
@@ -106,8 +103,8 @@
     }
     #submit:hover {
         background: linear-gradient(to left,
-                rgb(243, 100, 100) 50%,
-                rgb(100, 98, 98) 50%);
+                rgb(62, 255, 4) 50%,
+                rgb(5, 5, 5) 50%);
         background-size: 200% 100%;
         background-position: right bottom;
         transition: all 0.5s ease-out;
@@ -122,11 +119,16 @@
     #submit {
         border: 1px solid white;
         background-color: rgb(240, 144, 0);
-        height: 50px;
+        position: relative;
         color: white;
-        font-size: 1.8rem;
+        font-size: 2rem;
+        border-radius: 38px;
+        display: block;
+        margin: auto;
+        margin-top: 0px;
+        /* margin-top: 50px; */
+        padding: 6px;
         box-shadow: 4px 4px 7px 1px #888888;
-        border-radius: 10px;
     }
     #submit-dark {
         border: 1px solid black;
@@ -238,12 +240,10 @@
         margin-bottom: 110px;
         height: 120px;
     }
-    .nav-item{
-            margin-left: 20px;
-    }
     #title {
         font-size: 35px;
     }
+
 
     @media only screen and (max-width: 600px) {
         .result-division-bottom {
@@ -264,32 +264,20 @@
             text-align: center;
         }
         nav {
+            margin: 2%;
+            padding: 2%;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
-            background: rgb(3, 65, 90);
+            border: 2px blue;
             background: rgb(3, 65, 90);
             border-radius: 8px;
-            padding: 10px;
-            margin: 0px;
         } 
 
         .head {
             margin-top: 10px;
             font-size: 1.7rem;
-        }
-        .container2{
-            border: 5px green;
-            border-radius: 10px;
-            background-color: rgb(197, 255, 197);
-            width: 80%;
-            height: 80vh;
-        }
-
-        .container2, input{
-            margin-left: 10px;
-            margin-right: 10px;
         }
     }
 
@@ -302,9 +290,32 @@
     #third{
         margin-bottom: 7px;
     }
+    .output{
+        font-size: 1.3rem;
+        padding-top: 10px;
+    }
+    .output:first-child{
+      font-weight: 700;
+    }
+   .output_div{
+       box-sizing: content-box;
+       margin-top: 5%;
+       background-color: rgb(240, 144, 0);
+   }
+   /* //slider css */
+
+ 
+
+
+
+
+
+
+
 
 </style>
 <!---------------------------------------------------------------------CSS ENDS HERE-------------------------------------------------------------------------------->
+
 
 
 <!-------------------------------------------------------------------BODY STARTS HERE------------------------------------------------------------------------------->
@@ -325,9 +336,11 @@
 
         <a class=" hover:text-white" href="index.html">Main Page</a>
         <a class="mr-5 ml-5 hover:text-white" href="about.html">About Us</a>
-        <a class="hover:text-white" href="File.html">File Transfer</a>
-        <a class="mr-5 ml-5 hover:text-white" href="#">Fourth Link</a>
 
+       
+
+        <a class="hover:text-white" href="File.html">File Transfer </a>
+        <a class="mr-5 ml-5 hover:text-white" href="#">Fourth Link</a>
 
       </nav>
 
@@ -335,14 +348,49 @@
 
     </div>
   </header>
-  
 
   <div id = "input-container" class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
     <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
+
       
 
+      <h2 class="head">File Transfer Time Predictor</h2>
+      <form id="form" class="w-full px-4 space-y-9">
+     
+        <div class="flex flex-col gap-y-2">
+          <label>Enter your File Transfer speed (MBps)</label>
+          
+          <input type="number" min="1" placeholder="Internet speed in Mbps" id="speed"
+            class="p-4">
+        </div>
+        <div class="flex flex-col gap-y-2">
+          <label>File size (GB)</label>
+          <input type="number" min="1" placeholder="File size in GB" id="size"
+            class="p-4">
+
+        </div>
+        <div class="btn-center">
+            <button type="button" id="submit" class="button">Submit</button>
+        </div>
+    </form>
+        <div id="output"
+        class="result-division-bottom bg-red-100 hidden rounded-md p-6 flex flex-col items-center justify-center">
+        <div class="w-full mx-auto text-center">
+            <h2 id="download" class="font-semibold"></h2>
+            <div class="output_div">
+                <p class="output" id="sent"></p>
+                <p class="output" id="onespeed"></p>
+                <p class="output" id="filespeed"></p>
+                <p class="output" id="reload"></p>
+ 
+            </div>
+        
+        </div>
+      </div>
+    </header>
+
     <main>
-        <div class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+        <!-- <div class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
             <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
                 <h2 class="head">Download Time Predictor</h2>
                 <form id="form" class="w-full px-4 space-y-9">
@@ -368,12 +416,9 @@
                         <p id="filespeed"></p>
                         <p id="reload"></p>
                     </div>
-
-
-
                 </div>
             </div>
-        </div>
+        </div> -->
 
 
   <!-- changes done -->
@@ -453,10 +498,10 @@
                 fileTime = `${fileHours}hrs, ${fileMinutes}${minutes}, ${fileSeconds}s `;
                 document.getElementById('output').style.display = 'block'
                 document.getElementById("download").innerHTML = `Download speed: ${downloadSpeed}MBps`;
-                document.getElementById("sent").innerHTML = `Approximate time required to download`;
+                document.getElementById("sent").innerHTML = `Approximate time to transfer the file`;
                 document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
                 document.getElementById("filespeed").innerHTML = `${size}GB file: ${fileTime}`;
-                document.getElementById("reload").innerHTML = `<br><br><button id="Calculate" onclick="document.location='index.html'">CALCULATE NEW</button>`;
+                document.getElementById("reload").innerHTML = `<br><br><button id="Calculate" onclick="document.location='file.html'">CALCULATE AGAIN</button>`;
                 document.getElementById("output").style.background = '#07C962'
                 document.getElementById("Calculate").style.background = '#000000'
                 document.getElementById("Calculate").style.color = '#FFFFFF'
@@ -467,94 +512,9 @@
             }
         }
 
-        document.getElementById("submit").addEventListener("click", best);
+       
 
-        function best() {
-            let speed = document.getElementById("speed").value;
-            let size = document.getElementById("size").value;
-            if (speed === "" || size === "") {
-                alert("Please fill all the fields");
-            } else {
-                let downloadSpeed = speed;
-                let oneGB = parseFloat(1024 / downloadSpeed);
-                let oneGBhours = Math.floor(oneGB / 60 / 60);
-                let oneGBminutes = Math.floor(oneGB / 60) - oneGBhours * 60;
-                let oneGBseconds = Math.round(oneGB % 60, 3);
-                var Day = 0;
-                var Week = 0;
-
-                if (parseInt(oneGBhours) > 24) Day = parseInt(oneGBhours) / 24;
-                if (parseInt(Day) > 7) Week = parseInt(Day) / 7;
-
-                let oneGBTime;
-                let minutes;
-                minutes = "mins";
-
-                if (parseInt(oneGBminutes) == 1) minutes = `min`;
-                oneGBTime = `${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
-
-                if (oneGBhours == 0)
-                    oneGBTime = `${oneGBminutes}${minutes}, ${oneGBseconds}s `;
-
-                if (Day > 0)
-                    oneGBTime = `${parseInt(
-                        Day
-                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
-
-                if (parseInt(Day) > 0)
-                    oneGBTime = `${parseInt(
-                        Day
-                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
-
-                if (parseInt(Week) > 0)
-                    oneGBTime = `${parseInt(Week)}weeks, ${parseInt(
-                        Day
-                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
-
-                let file = (parseInt(size) * 1024) / downloadSpeed;
-                let fileDay =
-                    Math.floor(file / 60 / 60) > 24 ? Math.floor(file / 60 / 60) / 24 : 0;
-                let fileWeek = parseInt(fileDay) > 7 ? fileDay / 7 : 0;
-                let fileHours = Math.floor(file / 60 / 60);
-                let fileMinutes = Math.floor(file / 60) - fileHours * 60;
-                let fileSeconds = Math.round(file % 60, 3);
-                let fileTime;
-                minutes = "mins";
-
-                if (parseInt(fileMinutes) == 1) minutes = `min`;
-
-                fileTime = `${parseInt(fileWeek)}weeks,
-     ${parseInt(fileDay)}days,
-     ${fileHours}hrs, 
-     ${fileMinutes}${minutes}, 
-     ${fileSeconds}s `;
-
-                document.getElementById("output").style.display = "block";
-
-                document.getElementById(
-                    "download"
-                ).innerHTML = `Download speed: ${downloadSpeed}MBps`;
-
-                document.getElementById(
-                    "sent"
-                ).innerHTML = `Approximate time required to download`;
-
-                document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
-
-                document.getElementById(
-                    "filespeed"
-                ).innerHTML = `${size}GB file: ${fileTime}`;
-
-                document.getElementById(
-                    "reload"
-                ).innerHTML = `<br><br><a href="index.html" class="w-full text-center bg-black text-white p-4 rounded-md"><button id="calculate">CALCULATE NEW</button></a>`;
-
-                document.getElementById("output").style.background = "#42a4eb";
-                document.getElementById("output").style.background = "#07C962";
-                console.log(oneGBTime);
-                console.log(fileTime);
-            }
-        }</script>
+     </script>
 <!----------------------------------------------------------------JAVASCRIPT ENDS HERE------------------------------------------------------------------------------>
  
 </body>
