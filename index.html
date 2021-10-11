@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 
-
 <!---------------------------------------------CSS STARTS HERE----------------------------------------------------------->
 <style>
     body {
@@ -55,9 +54,13 @@
         border-radius: 10px;
         background-color: rgb(197, 255, 197);
         width: 70%;
-        height: 80vh;
+        height: 90vh;
         /* margin-top: 110px;
         margin-bottom: 0%; */
+    }
+    .container2, input{
+        margin-left: 10px;
+        margin-right: 10px;
     }
     a {
         color: #2ac8f8;
@@ -83,7 +86,7 @@
     }
     .head {
         text-shadow: 4px 4px 4px rgba(250, 155, 77, 0.527);
-        margin-top: 0px;
+        margin: 10px;
         text-align: center;
         font-size: 3rem;
         color: rgb(240, 144, 0);
@@ -119,16 +122,11 @@
     #submit {
         border: 1px solid white;
         background-color: rgb(240, 144, 0);
-        position: relative;
+        height: 50px;
         color: white;
-        font-size: 2rem;
-        border-radius: 38px;
-        display: block;
-        margin: auto;
-        margin-top: 0px;
-        /* margin-top: 50px; */
-        padding: 6px;
+        font-size: 1.8rem;
         box-shadow: 4px 4px 7px 1px #888888;
+        border-radius: 10px;
     }
     #submit-dark {
         border: 1px solid black;
@@ -240,10 +238,12 @@
         margin-bottom: 110px;
         height: 120px;
     }
+    .nav-item{
+            margin-left: 20px;
+    }
     #title {
         font-size: 35px;
     }
-
 
     @media only screen and (max-width: 600px) {
         .result-division-bottom {
@@ -264,20 +264,32 @@
             text-align: center;
         }
         nav {
-            margin: 2%;
-            padding: 2%;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            border: 2px blue;
+            flex-direction: column;
+            background: rgb(3, 65, 90);
             background: rgb(3, 65, 90);
             border-radius: 8px;
+            padding: 10px;
+            margin: 0px;
         } 
 
         .head {
             margin-top: 10px;
             font-size: 1.7rem;
+        }
+        .container2{
+            border: 5px green;
+            border-radius: 10px;
+            background-color: rgb(197, 255, 197);
+            width: 80%;
+            height: 80vh;
+        }
+
+        .container2, input{
+            margin-left: 10px;
+            margin-right: 10px;
         }
     }
 
@@ -293,7 +305,6 @@
 
 </style>
 <!---------------------------------------------------------------------CSS ENDS HERE-------------------------------------------------------------------------------->
-
 
 
 <!-------------------------------------------------------------------BODY STARTS HERE------------------------------------------------------------------------------->
@@ -314,11 +325,9 @@
 
         <a class=" hover:text-white" href="index.html">Main Page</a>
         <a class="mr-5 ml-5 hover:text-white" href="about.html">About Us</a>
-
-       
-
-        <a class="hover:text-white" href="File.html">File Transfer </a>
+        <a class="hover:text-white" href="File.html">File Transfer</a>
         <a class="mr-5 ml-5 hover:text-white" href="#">Fourth Link</a>
+
 
       </nav>
 
@@ -326,26 +335,11 @@
 
     </div>
   </header>
+  
 
   <div id = "input-container" class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
     <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
-
       
-
-      <h2 class="head">Download Time Predictor</h2>
-      <form id="form" class="w-full px-4 space-y-9">
-        <div class="flex flex-col gap-y-2">
-          <label>Enter your Internet speed (MBps)</label>
-          <input type="number" min="1" placeholder="Internet speed in Mbps" id="speed"
-            class="p-4">
-        </div>
-        <div class="flex flex-col gap-y-2">
-          <label>File size (GB)</label>
-          <input type="number" min="1" placeholder="File size in GB" id="size"
-            class="p-4">
-
-        </div>
-    </header>
 
     <main>
         <div class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
@@ -374,6 +368,9 @@
                         <p id="filespeed"></p>
                         <p id="reload"></p>
                     </div>
+
+
+
                 </div>
             </div>
         </div>
