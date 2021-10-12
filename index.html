@@ -442,8 +442,13 @@
                 <h2 class="head">Download Time Predictor</h2>
                 <form id="form" class="w-full px-4 space-y-9">
                     <div class="flex flex-col gap-y-2">
-                        <label>Enter your Internet speed (Mbps)</label>
-                        <input type="number" min="1" placeholder="Internet speed in Mbps" id="speed" class="p-4">
+                        <label>Enter your Internet speed</label>	
+	                    <input type="number" placeholder="Enter speed and select unit" id="speed" class="border-2 border-black rounded-md p-4">
+	                    <select id="unit" class="border-2 border-black rounded-md p-2">
+	                        <option value="mbps">Mbps</option>
+	                        <option value="mbs">MB/s</option>
+	                        <option value="kbs">KB/s</option>
+	                    </select>
                     </div>
                     <div class="flex flex-col gap-y-2">
                         <label>File size (GB)</label>
@@ -567,10 +572,21 @@
         function best() {
             let speed = document.getElementById("speed").value;
             let size = document.getElementById("size").value;
-            if (speed === "" || size === "") {
-                alert("Please fill all the fields");
-            } else {
-                let downloadSpeed = speed;
+
+            // Added different units of speed
+            let type = document.getElementById("unit").value || "mbps";
+            // console.log(type);
+	        if (speed == "" || size == "") {
+	            alert("Please fill all the fields");
+	        } else {
+	            let downloadSpeed = 0;
+	            if (type == "mbps") {
+	                downloadSpeed = speed;
+	            } else if (type == "mbs") {
+	                downloadSpeed = speed * 8;
+	            } else if (type == "kbs") {
+	                downloadSpeed = speed / 125;
+      	        }
                 let oneGB = parseFloat(1024 / downloadSpeed);
                 let oneGBhours = Math.floor(oneGB / 60 / 60);
                 let oneGBminutes = Math.floor(oneGB / 60) - oneGBhours * 60;
