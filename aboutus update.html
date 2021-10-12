@@ -191,8 +191,14 @@
     .result-div {
         display: flex;
     }
+    .contactimage{
+        margin-left: 400px;
+        margin-top: 170px;
+        height: 300px;
+        width: 300px;
+    }
     .social a:hover {
-        color: gray;
+        color:mediumblue;
     }
     .social {
         margin-bottom: 80px;
@@ -200,14 +206,27 @@
     }
     .social a {
         border: 2px red;
-        background: cornsilk;
+        background: lightblue;
         border-radius: 50%;
         width: 50px;
         padding: 10px;
         margin: 15px;
         color: black;
         font-size: 3rem;
+        animation:blink-animation 1s steps(5,start) infinite;
+    -webkit-animation:blink-animation 1s steps(5,start) infinite;
     }
+    @keyframes blink-animation{
+        to{
+            visibility: hidden;
+        }
+    }
+    @-webkit-keyframes blink-animation{
+        to{
+            visibility: hidden;
+        }
+    }
+    
     #contact {
        text-decoration: underline;
        text-shadow: 2px 2px 2px black;
@@ -352,7 +371,7 @@
     
     
             <a class="hover:text-white nav-item" href="index.html">Main Page</a>
-            <a class="hover:text-white nav-item" href="about.html">About Us</a>
+            <a class="hover:text-white nav-item" href="aboutus update.html">About Us</a>
             <a class="hover:text-white nav-item" href="#">Third Link</a>
             <a class="hover:text-white nav-item" href="#">Fourth Link</a>
     
@@ -384,6 +403,13 @@
                 </div>
             </div>
     </div>
+
+    <hr>
+
+    <div class="contactimage">
+        <img src="https://c.tenor.com/0RDUsEAznV8AAAAj/girl-cute.gif" alt="">
+    </div>
+    <hr>
 
 
       <div class="footer-basic" id="footer">
