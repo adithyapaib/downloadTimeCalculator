@@ -50,17 +50,20 @@
         margin-right: 1.8rem;
     }
     .container2 {
-        border: 5px green;
-        border-radius: 10px;
+        border: 5px navy;
+        border-radius: 20px;
         background-color: rgb(197, 255, 197);
-        width: 70%;
-        height: 90vh;
+        width: 96%;
+        height: 100vh;
+        margin-top:16px;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
         /* margin-top: 110px;
         margin-bottom: 0%; */
     }
     .container2, input{
         margin-left: 10px;
         margin-right: 10px;
+    
     }
     a {
         color: #2ac8f8;
@@ -84,12 +87,17 @@
         outline: none;
         padding: 0%;
     }
+    input:hover{
+        background-color: palevioletred;
+        color: steelblue;
+    }
     .head {
-        text-shadow: 4px 4px 4px rgba(250, 155, 77, 0.527);
-        margin: 10px;
+        text-shadow: 6px 6px 6px palevioletred;
+        margin-top: 14px;
+        padding-top: 16px;
         text-align: center;
         font-size: 3rem;
-        color: rgb(240, 144, 0);
+        color:black;
         font-weight: 700;
     }
     .btn-center {
@@ -99,7 +107,7 @@
   background-color: darkgreen;
   border-color: red;
   color: white;
-  font-size: 15px;
+  font-size: 12px;
   /* padding:15px;
   padding-top:10px;
   padding-bottom:20px; */
@@ -151,7 +159,7 @@
         box-shadow: -5px 5px 15px 4px rgb(78, 58, 119);
         padding-bottom: 31px;
         position: relative;
-        top: 65vh;
+        top: 80vh;
         background-color: rgb(61, 36, 102);
         width: 620px;
         height: 57px;
@@ -185,6 +193,12 @@
         box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
             inset -2px -2px 3px rgba(0, 0, 0, 0.6);
         outline: none;
+    }
+    #output{
+        width: 60vw;
+        height: 40vh;
+        line-height: 4px;
+        background-color: palevioletred;
     }
     .box {
     width: 450px;
@@ -347,13 +361,32 @@
 
     @media only screen and (max-width: 600px) {
         .result-division-bottom {
-            height: 40%;
-            margin-bottom: 40px;
+            height: 100vh;
+            width: 100vw;
+
+        }
+        #output{
+            width: 60vw;
+        height: 70vh;
+        line-height: 13px;
+        
         }
         body {
             overflow-x: hidden;
         }
+        .container2{
+            border: 5px green;
+            border-radius: 10px;
+            background-color: rgb(197, 255, 197);
+            width: 100%;
+            height: 100vh;
+            margin-top: 54px;
     }
+    .head {
+            margin-top: 25px;
+            font-size: 1.2rem;
+    }
+}
 
          /*making it responsive*/
     @media only screen and (max-width: 770px) {
@@ -383,8 +416,8 @@
             border: 5px green;
             border-radius: 10px;
             background-color: rgb(197, 255, 197);
-            width: 80%;
-            height: 80vh;
+            width: 100%;
+            height: 100vh;
         }
 
         .container2, input{
@@ -443,7 +476,7 @@
 
     <main>
         <div class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
-            <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
+            
                 <h2 class="head">Download Time Predictor</h2>
                 <form id="form" class="w-full px-4 space-y-9">
                     <div class="flex flex-col gap-y-2">
@@ -460,7 +493,7 @@
                 </form>
 
                 <div id="output"
-                    class="result-division-bottom bg-red-100 hidden rounded-md p-6 flex flex-col items-center justify-center">
+                    class="result-division-bottom bg-red-100 hidden rounded-md p-8 flex flex-col items-center justify-center">
                     <div class="w-full mx-auto text-center">
                         <p id="download" class="font-semibold"></p>
                         <p id="sent"></p>
@@ -472,7 +505,6 @@
 
 
                 </div>
-            </div>
         </div>
 
 
@@ -560,7 +592,7 @@
                 document.getElementById("output").style.background = '#07C962'
                 document.getElementById("Calculate").style.background = '#000000'
                 document.getElementById("Calculate").style.color = '#FFFFFF'
-                document.getElementById("Calculate").style.padding = '24px'
+                document.getElementById("Calculate").style.padding = '16px'
                 document.getElementById("Calculate").style.borderRadius = '12px'
                 console.log(oneGBTime);
                 console.log(fileTime)
