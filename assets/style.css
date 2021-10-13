@@ -157,11 +157,12 @@ input{
   display: none;
 }
 #calculate{
-  padding: 1.2rem;
+  /* padding: 1.2rem; */
   background-color: black;
   color: white;
   border-radius: 40px;
   transition: all 600ms ease;
+  
 }
 #calculate:hover{
   background-color: #fff;
