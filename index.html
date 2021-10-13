@@ -333,6 +333,7 @@
     }
     .dark {
         background-color: rgb(29, 29, 29);
+        color: black;
     }
     #headerr-dark {
         background-color: rgb(245, 237, 237);
@@ -483,13 +484,22 @@
                 </form>
 
                 <div id="output"
-                    class="result-division-bottom bg-red-100 hidden rounded-md p-6 flex flex-col items-center justify-center">
+                    class="result-division-bottom bg-red-100 hidden rounded-md p-6 flex flex-col items-center justify-center" style="margin-top: 30px;">
                     <div class="w-full mx-auto text-center">
-                        <p id="download" class="font-semibold"></p>
-                        <p id="sent"></p>
-                        <p id="onespeed"></p>
-                        <p id="filespeed"></p>
-                        <p id="reload"></p>
+                        <p id="download" class="font-semibold" style="font-size: 27px;"></p>
+                        <div style="background-color: rgb(255 255 255 / 80%); padding-top: 25px; padding-bottom: 25px; width: 23rem; border-radius: 8px; margin-left: 32px; margin-top: 31px;">
+                        <p style="font-size: 17px;" id="sent"></p>
+                        <p style="font-size: 17px;" id="onespeed"></p>
+                        <p style="font-size: 17px;" id="filespeed"></p>
+                    </div>
+                        <p style="
+                        background-color: #000; 
+                        width: 12rem;     
+                        margin-left: 7rem;
+                        margin-top: 2rem;
+                        border-radius: 8px;
+                        font-size: 2px;" id="reload"></p>
+                        
                     </div>
 
 
@@ -579,7 +589,7 @@
                 document.getElementById("sent").innerHTML = `Approximate time required to download`;
                 document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
                 document.getElementById("filespeed").innerHTML = `${size}GB file: ${fileTime}`;
-                document.getElementById("reload").innerHTML = `<br><br><button id="Calculate" onclick="document.location='index.html'">CALCULATE NEW</button>`;
+                document.getElementById("reload").innerHTML = `<br><br><button id="Calculate"  onclick="document.location='index.html'">CALCULATE NEW</button>`;
                 document.getElementById("output").style.background = '#07C962'
                 document.getElementById("Calculate").style.background = '#000000'
                 document.getElementById("Calculate").style.color = '#FFFFFF'
