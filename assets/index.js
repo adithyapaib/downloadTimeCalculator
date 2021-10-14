@@ -4,7 +4,10 @@
        let speed = document.getElementById("speed").value;
        let size = document.getElementById("size").value;
        if (speed == "" || size == "") {
-             alert("Please fill all the fields");
+            //alert("Please fill all the fields");
+            var d = document.getElementById('alert');
+            d.innerHTML = '<div class="alert alert-warning alert-dismissible fade show" role="alert"> Input can not be empty! Please fill all the fields  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
        }
        else {
            let downloadSpeed = speed;
@@ -51,7 +54,10 @@ function best() {
   let speed = document.getElementById("speed").value;
   let size = document.getElementById("size").value;
   if (speed === "" || size === "") {
-    alert("Please fill all the fields");
+    //alert("Please fill all the fields");
+    var d = document.getElementById('alert');
+    d.innerHTML = '<div class="alert alert-warning alert-dismissible fade show" role="alert"> Input can not be empty! Please fill all the fields  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
   } else {
     let downloadSpeed = speed;
     let oneGB = parseFloat(1024 / downloadSpeed);
