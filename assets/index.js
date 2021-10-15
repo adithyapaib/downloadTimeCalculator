@@ -3,11 +3,20 @@
        event.preventDefault();
        let speed = document.getElementById("speed").value;
        let size = document.getElementById("size").value;
+       let speed1 = parseFloat(document.getElementById("speed").value);
+       let size1 = parseFloat(document.getElementById("size").value);
        if (speed == "" || size == "") {
             //alert("Please fill all the fields");
             var d = document.getElementById('alert');
             d.innerHTML = '<div class="alert alert-warning alert-dismissible fade show" role="alert"> Input can not be empty! Please fill all the fields  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
             document.body.scrollTop = document.documentElement.scrollTop = 0;
+       }
+       else if (speed1<0||size1<0)
+       {
+           var d = document.getElementById('alert');
+           d.innerHTML = '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Input can not be negative! Please fill all the fields properly <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+           document.body.scrollTop = document.documentElement.scrollTop = 0;
+           document.getElementById('output').style.display = 'none'
        }
        else {
            let downloadSpeed = speed;

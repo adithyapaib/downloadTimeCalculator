@@ -60,17 +60,22 @@
         margin-right: 1.8rem;
     }
     .container2 {
-        border: 5px green;
-        border-radius: 10px;
+        border: 5px navy;
+        border-radius: 20px;
         background-color: rgb(197, 255, 197);
-        width: 70%;
-        height: 90vh;
+        width: 96%;
+        height: 100vh;
+        margin-top:28px;
+        box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+        background-color: cadetblue;
         /* margin-top: 110px;
         margin-bottom: 0%; */
     }
+    
     .container2, input{
         margin-left: 10px;
         margin-right: 10px;
+    
     }
     a {
         color: rgb(157, 206, 247);
@@ -94,31 +99,37 @@
         outline: none;
         padding: 0%;
     }
+    input:hover{
+        background-color: palevioletred;
+        color: steelblue;
+    }
     .head {
-        text-shadow: 4px 4px 4px rgba(250, 155, 77, 0.527);
-        margin: 10px;
+        text-shadow: 6px 6px 6px palevioletred;
+        margin-top: 14px;
+        padding-top: 16px;
         text-align: center;
         font-size: 3rem;
-        color: rgb(240, 144, 0);
+        color:black;
         font-weight: 700;
     }
     .btn-center {
-        display: flex;
-        margin-bottom: 50px;
-    }
-    .button {
-        background-color: darkgreen;
-        border-color: red;
-        color: white;
-        font-size: 15px;
-        /* padding:15px;
-        padding-top:10px;
-        padding-bottom:20px; */
 
-        width: 200px;
-        height: 30px;
-        border: 2px solid green;
-    }
+  display: flex;
+}
+.button {
+  background-color: darkgreen;
+  border-color: red;
+  color: white;
+  font-size: 12px;
+  /* padding:15px;
+  padding-top:10px;
+  padding-bottom:20px; */
+
+  width: 200px;
+  height: 30px;
+  border: 2px solid green;
+}
+
     #submit:hover {
         background: linear-gradient(to left,
                 rgb(243, 100, 100) 50%,
@@ -161,7 +172,7 @@
         box-shadow: -5px 5px 15px 4px rgb(78, 58, 119);
         padding-bottom: 31px;
         position: relative;
-        top: 65vh;
+        top: 80vh;
         background-color: rgb(61, 36, 102);
         width: 620px;
         height: 57px;
@@ -195,6 +206,12 @@
         box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
             inset -2px -2px 3px rgba(0, 0, 0, 0.6);
         outline: none;
+    }
+    #output{
+        width: 60vw;
+        height: 40vh;
+        line-height: 4px;
+        background-color: palevioletred;
     }
     .box {
         width: 450px;
@@ -241,6 +258,7 @@
     .box3 ul li a {
         color: black;
         font-size: 3em;
+        border-radius: 10px;
     }
 
     .box3 ul li a {
@@ -319,6 +337,10 @@
 
     /* chaning the social-links style  */
 
+    .dark .Social-links li a{
+        color: white;
+    }
+
     @media only screen and (max-width: 768px) {
         .Social-links li a{
             font-size: 2em !important;
@@ -376,13 +398,32 @@
 
     @media only screen and (max-width: 600px) {
         .result-division-bottom {
-            height: 40%;
-            margin-bottom: 40px;
+            height: 100vh;
+            width: 100vw;
+
+        }
+        #output{
+            width: 60vw;
+        height: 70vh;
+        line-height: 13px;
+        
         }
         body {
             overflow-x: hidden;
         }
+        .container2{
+            border: 5px green;
+            border-radius: 10px;
+            background-color: rgb(197, 255, 197);
+            width: 100%;
+            height: 100vh;
+            margin-top: 54px;
     }
+    .head {
+            margin-top: 25px;
+            font-size: 1.2rem;
+    }
+}
 
          /*making it responsive*/
     @media only screen and (max-width: 770px) {
@@ -407,8 +448,10 @@
             border: 5px green;
             border-radius: 10px;
             background-color: rgb(197, 255, 197);
-            width: 80%;
-            height: auto;
+
+            width: 100%;
+            height: 100vh;
+
         }
 
         .container2, input{
@@ -425,6 +468,21 @@
     }
     #third{
         margin-bottom: 7px;
+    }
+
+
+    /* styling the result div and calculate new */
+    @media only screen and (max-width: 800px) {
+        .result-div{
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 10px;
+        }
+
+        #reload{
+            margin: 10px auto !important;
+        }
+
     }
 
 </style>
@@ -453,28 +511,30 @@
         <a class="mr-5 ml-5  navlink" href="#">Fourth Link</a>
 
 
+
       </nav>
 
-      <button onclick="darkmode()" class="toggle"><i class="fas fa-adjust"></i></button>
+      <button onclick="darkmode()" class="toggle"><i class="fas fa-lightbulb"></i></i></button>
 
     </div>
   </header>
 
   <div id="alert"></div>
   
-
   <div id = "input-container" class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
     <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
       
-
+       
     <main>
         <div class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
-            <div class="flex flex-col mx-auto justfiy-around w-full">
+
+           
+
                 <h2 class="head">Download Time Predictor</h2>
                 <form id="form" class="w-full px-4 space-y-9">
                     <div class="flex flex-col gap-y-2">
                         <label>Enter your Internet speed</label>	
-	                    <input type="number" placeholder="Enter speed and select unit" id="speed" class="border-2 border-black rounded-md p-4">
+	                    <input type="number" placeholder="Enter speed and select unit" id="speed" class="border-2 border-black rounded-md p-4" min="0" oninput="validity.valid||(value='');" >
 	                    <select id="unit" class="border-2 border-black rounded-md p-2">
 	                        <option value="mbps">Mbps</option>
 	                        <option value="mbs">MB/s</option>
@@ -491,10 +551,12 @@
                 </form>
 
                 <div id="output"
-                    class="result-division-bottom bg-red-100 hidden rounded-md p-6 flex flex-col items-center justify-center" style="margin-top: 30px;">
+
+                    class="result-division-bottom bg-red-100 hidden rounded-md p-8 flex flex-col items-center justify-center">
+
                     <div class="w-full mx-auto text-center">
                         <p id="download" class="font-semibold" style="font-size: 27px;"></p>
-                        <div style="background-color: rgb(255 255 255 / 80%); padding-top: 25px; padding-bottom: 25px; width: 23rem; border-radius: 8px; margin-left: 32px; margin-top: 31px;">
+                        <div class="result-div" style="background-color: rgb(255 255 255 / 80%); padding-top: 25px; padding-bottom: 25px; width: 23rem; border-radius: 8px; margin-left: 32px; margin-top: 31px;">
                         <p style="font-size: 17px;" id="sent"></p>
                         <p style="font-size: 17px;" id="onespeed"></p>
                         <p style="font-size: 17px;" id="filespeed"></p>
@@ -512,7 +574,6 @@
 
 
                 </div>
-            </div>
         </div>
 
 
@@ -560,15 +621,21 @@
         }
     </script>
     <script>
+
         document.getElementById("submit").addEventListener("click", best);
         function best(event) {
             event.preventDefault();
             let speed = document.getElementById("speed").value;
             let size = document.getElementById("size").value;
+            let speed1 = parseFloat(document.getElementById("speed").value);
+            let size1 = parseFloat(document.getElementById("size").value);
             if (speed == "" || size == "") {
-                //alert("Please fill all the fields");
+                alert("Please fill all the fields");
+            }
+           else if (speed1<0||size1<0)
+            {
                 var d = document.getElementById('alert');
-                d.innerHTML = '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Input can not be empty! Please fill all the fields  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+                d.innerHTML = '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Input can not be negative! Please fill all the fields properly <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
                 document.body.scrollTop = document.documentElement.scrollTop = 0;
             }
             else {
@@ -599,95 +666,74 @@
                 document.getElementById("sent").innerHTML = `Approximate time required to download`;
                 document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
                 document.getElementById("filespeed").innerHTML = `${size}GB file: ${fileTime}`;
-                document.getElementById("reload").innerHTML = `<br><br><button id="Calculate"  onclick="document.location='index.html'">CALCULATE NEW</button>`;
+                document.getElementById("reload").innerHTML = `<br><br><button id="Calculate" onclick="document.location='index.html'">CALCULATE NEW</button>`;
                 document.getElementById("output").style.background = '#07C962'
                 document.getElementById("Calculate").style.background = '#000000'
                 document.getElementById("Calculate").style.color = '#FFFFFF'
-                document.getElementById("Calculate").style.padding = '24px'
+                document.getElementById("Calculate").style.padding = '16px'
                 document.getElementById("Calculate").style.borderRadius = '12px'
                 console.log(oneGBTime);
                 console.log(fileTime)
             }
         }
 
+
         document.getElementById("submit").addEventListener("click", best);
 
         function best() {
             let speed = document.getElementById("speed").value;
             let size = document.getElementById("size").value;
-
+            let speed1 = parseFloat(document.getElementById("speed").value);
+            let size1 = parseFloat(document.getElementById("size").value);
             // Added different units of speed
             let type = document.getElementById("unit").value || "mbps";
             // console.log(type);
 	        if (speed == "" || size == "") {
 	            alert("Please fill all the fields");
-	        } else {
+	        }  else if (speed1<0||size1<0)
+            {
+                var d = document.getElementById('alert');
+                d.innerHTML = '<div class="alert alert-danger alert-dismissible fade show" role="alert"> Input can not be negative! Please fill all the fields properly <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>';
+                document.body.scrollTop = document.documentElement.scrollTop = 0;
+                document.getElementById('output').style.display = 'none'
+            }
+            else {
 	            let downloadSpeed = 0;
 	            if (type == "mbps") {
-	                downloadSpeed = speed;
+	                downloadSpeed = speed * 125;
 	            } else if (type == "mbs") {
-	                downloadSpeed = speed * 8;
+	                downloadSpeed = speed * 1000;
 	            } else if (type == "kbs") {
-	                downloadSpeed = speed / 125;
+	                downloadSpeed = speed ;
       	        }
-                let oneGB = parseFloat(1024 / downloadSpeed);
-                let oneGBhours = Math.floor(oneGB / 60 / 60);
-                let oneGBminutes = Math.floor(oneGB / 60) - oneGBhours * 60;
-                let oneGBseconds = Math.round(oneGB % 60, 3);
-                var Day = 0;
-                var Week = 0;
+                let oneGBtoKB = 1000000;
+                let oneGBTimeinSec = oneGBtoKB / downloadSpeed;
+                var d = Math.floor(oneGBTimeinSec / (3600*24));
+                var h = Math.floor(oneGBTimeinSec % (3600*24) / 3600);
+                var m = Math.floor(oneGBTimeinSec % 3600 / 60);
+                var s = Math.floor(oneGBTimeinSec % 60);
 
-                if (parseInt(oneGBhours) > 24) Day = parseInt(oneGBhours) / 24;
-                if (parseInt(Day) > 7) Week = parseInt(Day) / 7;
+                oneGBTime = `${parseInt(d)}days,
+     ${h}hrs, 
+     ${m}min, 
+     ${s}s `;
 
-                let oneGBTime;
-                let minutes;
-                minutes = "mins";
+                let fileTimeinSec = (size * oneGBtoKB)/ downloadSpeed;
+                var d = Math.floor(fileTimeinSec / (3600*24));
+                var h = Math.floor(fileTimeinSec % (3600*24) / 3600);
+                var m = Math.floor(fileTimeinSec % 3600 / 60);
+                var s = Math.floor(fileTimeinSec % 60);
 
-                if (parseInt(oneGBminutes) == 1) minutes = `min`;
-                oneGBTime = `${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
-
-                if (oneGBhours == 0)
-                    oneGBTime = `${oneGBminutes}${minutes}, ${oneGBseconds}s `;
-
-                if (Day > 0)
-                    oneGBTime = `${parseInt(
-                        Day
-                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
-
-                if (parseInt(Day) > 0)
-                    oneGBTime = `${parseInt(
-                        Day
-                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
-
-                if (parseInt(Week) > 0)
-                    oneGBTime = `${parseInt(Week)}weeks, ${parseInt(
-                        Day
-                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
-
-                let file = (parseInt(size) * 1024) / downloadSpeed;
-                let fileDay =
-                    Math.floor(file / 60 / 60) > 24 ? Math.floor(file / 60 / 60) / 24 : 0;
-                let fileWeek = parseInt(fileDay) > 7 ? fileDay / 7 : 0;
-                let fileHours = Math.floor(file / 60 / 60);
-                let fileMinutes = Math.floor(file / 60) - fileHours * 60;
-                let fileSeconds = Math.round(file % 60, 3);
-                let fileTime;
-                minutes = "mins";
-
-                if (parseInt(fileMinutes) == 1) minutes = `min`;
-
-                fileTime = `${parseInt(fileWeek)}weeks,
-     ${parseInt(fileDay)}days,
-     ${fileHours}hrs, 
-     ${fileMinutes}${minutes}, 
-     ${fileSeconds}s `;
+                fileTime = `${parseInt(d)}days,
+     ${h}hrs, 
+     ${m}min, 
+     ${s}s `;
 
                 document.getElementById("output").style.display = "block";
 
                 document.getElementById(
                     "download"
-                ).innerHTML = `Download speed: ${downloadSpeed}MBps`;
+                ).innerHTML = `Download speed: ${downloadSpeed}KBps`;
 
                 document.getElementById(
                     "sent"
