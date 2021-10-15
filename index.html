@@ -248,6 +248,7 @@
     .box3 ul li a {
         color: black;
         font-size: 3em;
+        border-radius: 10px;
     }
 
     .box3 ul li a {
@@ -325,6 +326,10 @@
     }
 
     /* chaning the social-links style  */
+
+    .dark .Social-links li a{
+        color: white;
+    }
 
     @media only screen and (max-width: 768px) {
         .Social-links li a{
@@ -455,19 +460,19 @@
         margin-bottom: 7px;
     }
 
-    a.navlink{
-        border-radius: 5px;
-        padding: 8px;
-    }
 
-    a.navlink:hover{
-        text-decoration: none;
-        background-color: #17a2b8;
-        color: black;
-    }
+    /* styling the result div and calculate new */
+    @media only screen and (max-width: 800px) {
+        .result-div{
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 10px;
+        }
 
-    .fas:hover {
-  transform: scale(1.5);
+        #reload{
+            margin: 10px auto !important;
+        }
+
     }
 
 </style>
@@ -540,7 +545,7 @@
 
                     <div class="w-full mx-auto text-center">
                         <p id="download" class="font-semibold" style="font-size: 27px;"></p>
-                        <div style="background-color: rgb(255 255 255 / 80%); padding-top: 25px; padding-bottom: 25px; width: 23rem; border-radius: 8px; margin-left: 32px; margin-top: 31px;">
+                        <div class="result-div" style="background-color: rgb(255 255 255 / 80%); padding-top: 25px; padding-bottom: 25px; width: 23rem; border-radius: 8px; margin-left: 32px; margin-top: 31px;">
                         <p style="font-size: 17px;" id="sent"></p>
                         <p style="font-size: 17px;" id="onespeed"></p>
                         <p style="font-size: 17px;" id="filespeed"></p>
