@@ -8,7 +8,7 @@ built on html css and js
 
 #### Please make sure you are committing your changes to the right branch 
 #### If you PR to the wrong branch then there will be merge conflicts !!!
-For any Queries pls reach me via https://www.linkedin.com/in/adithyapaib/
+For any Queries you can reach me via https://www.linkedin.com/in/adithyapaib/
 
 ## Demo
 https://adithyapaib.github.io/downloadTimeCalculator/
