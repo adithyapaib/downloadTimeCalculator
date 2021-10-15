@@ -28,6 +28,16 @@
     body {
         background: rgb(157, 206, 247);
     }
+     
+    .navh{
+        display:flexbox;
+        /* height: 80px; */
+    }
+    a:hover{
+     text-decoration: none;
+     color:rgb(240, 144, 0);
+     font-size: 23px;
+    }
     .ml-1,
     .mx-1 {
         margin-left: -5.75rem !important;
@@ -68,7 +78,7 @@
     
     }
     a {
-        color: #2ac8f8;
+        color: rgb(157, 206, 247);
         font-size: 1.3rem;
         text-decoration: none;
         background-color: transparent;
@@ -484,7 +494,7 @@
 
 
   <header class="text-gray-400 bg-gray-900 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center navh">
       <a class="flex title-font font-medium items-center text-white mb-lg-1 mb-4 ml-lg-0 ml-5" href="index.html">
         <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -492,13 +502,14 @@
         </svg>
         <span class="ml-3 text-xl">Download Time Predictor</span>
       </a>
-      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center navh">
 
 
-        <a class=" hover:text-white navlink" href="index.html">Main Page</a>
-        <a class="mr-5 ml-5 hover:text-white navlink" href="aboutusupdate.html">About Us</a>
-        <a class="hover:text-white navlink" href="File.html">File Transfer</a>
-        <a class="mr-5 ml-5 hover:text-white navlink" href="#">Fourth Link</a>
+        <a class=" navlink" href="index.html">Main Page</a>
+        <a class="mr-5 ml-5 navlink" href="aboutus update.html">About Us</a>
+        <a class=" navlink" href="File.html">File Transfer</a>
+        <a class="mr-5 ml-5  navlink" href="#">Fourth Link</a>
+
 
 
       </nav>
