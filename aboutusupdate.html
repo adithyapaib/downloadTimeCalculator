@@ -298,6 +298,19 @@
         font-size: 35px;
     }
 
+    a.navlink{
+        border-radius: 5px;
+        padding: 8px;
+    }
+
+    a.navlink:hover{
+        text-decoration: none;
+        background-color: #17a2b8;
+        color: black;
+    }
+    .fas:hover {
+  transform: scale(1.5);
+    }
          /*making it responsive*/
 @media only screen and (max-width: 770px) {
     #title{
@@ -353,6 +366,21 @@
     padding: 6px;
     box-shadow: 4px 4px 7px 1px #888888;
   }
+
+  a.navlink{
+        border-radius: 5px;
+        padding: 8px;
+    }
+
+    a.navlink:hover{
+        text-decoration: none;
+        background-color: #17a2b8;
+        color: black;
+    }
+
+    .fas:hover {
+  transform: scale(1.5);
+    }
 }
 </style>
 
@@ -370,15 +398,15 @@
           <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
     
     
-            <a class="hover:text-white nav-item" href="index.html">Main Page</a>
+            <a class="hover:text-white nav-item navlink" href="index.html">Main Page</a>
 
-            <a class="hover:text-white nav-item" href="#">About Us</a>
-            <a class="hover:text-white nav-item" href="File.html">File Transfer</a>
-            <a class="hover:text-white nav-item" href="#">Fourth Link</a>
+            <a class="hover:text-white nav-item navlink" href="#">About Us</a>
+            <a class="hover:text-white nav-item navlink" href="File.html">File Transfer</a>
+            <a class="hover:text-white nav-item navlink" href="#">Fourth Link</a>
     
           </nav>
     
-          <button onclick="darkmode()" class="toggle"><i class="fas fa-adjust"></i></button>
+          <button onclick="darkmode()" class="toggle"><i class="fas fa-lightbulb"></i></i></button>
     
         </div>
       </header>
