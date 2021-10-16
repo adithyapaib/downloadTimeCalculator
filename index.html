@@ -28,7 +28,7 @@
     body {
         background: rgb(157, 206, 247);
     }
-
+   
     .navh {
         display: flexbox;
         /* height: 80px; */
@@ -192,18 +192,29 @@
         margin: auto;
         box-shadow: 4px 4px 7px 1px #888888;
     }
-
     #submit-dark {
-        border: 1px solid black;
-        background-color: rgb(130, 71, 224);
-        box-shadow: -5px 5px 15px 4px rgb(78, 58, 119);
-        padding-bottom: 31px;
+        border: 1px solid white;
+
+        background-color: rgb(238,130,238);
+        color: white;
+        /* padding-bottom: 31px; */
         position: relative;
-        top: 80vh;
-        background-color: rgb(61, 36, 102);
-        width: 620px;
-        height: 57px;
+
+        /* width: 627px; */
+        width: 50%;
+        height: 30%;
+        min-width: 150px;
+        color: black;
+        font-size: 2.3rem;
+        border-radius: 16px;
+        /* margin-left: 10rem;
+        margin-top: 2rem; */
+        display: block;
+        margin: auto;
+        box-shadow: 4px 4px 7px 1px #888888;
     }
+
+    
 
     #submit-dark:hover {
         background: linear-gradient(to right,
@@ -342,6 +353,11 @@
         box-shadow: inset -2px -2px 3px rgba(95, 93, 93, 0.6),
             inset 2px 2px 3px rgba(10, 9, 9, 0.6);
     }
+    .link-center{
+        align-items: center;
+        text-align: center;
+
+    }
 
     .gap-y-12 {
         height: 0vh;
@@ -378,6 +394,7 @@
     .dark .Social-links li a {
         color: white;
     }
+   
 
     @media only screen and (max-width: 768px) {
         .Social-links li a {
@@ -398,10 +415,7 @@
         word-spacing: 3px;
     }
 
-    .dark {
-        background-color: rgb(29, 29, 29);
-        color: black;
-    }
+   
 
     #headerr-dark {
         background-color: rgb(245, 237, 237);
@@ -527,6 +541,7 @@
         margin-bottom: 7px;
     }
 
+
      a.navlink{
        border-radius: 5px;
         padding: 8px;
@@ -596,7 +611,7 @@
 
 
             <main>
-                <div class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+                <div id="container_2" class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
 
 
 
@@ -612,6 +627,9 @@
                                 <option value="mbs">MB/s</option>
                                 <option value="kbs">KB/s</option>
                             </select>
+                        </div>
+                        <div class="link-center">
+                            <p><a href="https://www.speedtest.net/">I don't know my internet speed</a></p>
                         </div>
                         <div class="flex flex-col gap-y-2">
                             <label>File size (GB)</label>
@@ -654,13 +672,13 @@
                 <!-- changes done -->
 
 
-                <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
+               <!--  <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
                 <script>
                     function darkmode() {
                         var element = document.body;
                         element.classList.toggle("dark");
                     }
-                </script>
+                </script> -->
                 <script src="assets/index.js"></script>
 </body>
 
@@ -676,11 +694,28 @@
 <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
 
 <script>
-    function darkmode() {
-        var element = document.body;
-        element.classList.toggle("dark");
-        document.getElementById("submit").style.backgroundColor = "rgb(130, 71, 224)";
+    var darkmodeactive = "False";
+  function darkmode() {
+    if(darkmodeactive == "False"){
+        darkmodeactive = "True";
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "rgb(5,5,10)";
+        document.getElementById('submit').setAttribute('id', 'submit-dark');
+        document.body.classList.toggle("dark");
+    
+      }
+    else{
+        lightmode();
     }
+  }
+  function lightmode(){
+    darkmodeactive = "False";
+    document.body.style.backgroundColor = "rgb(147,206,247)";
+    document.body.style.color = "black";
+    document.getElementById('submit-dark').setAttribute('id', 'submit');
+  
+}
+
 </script>
 <script>
 
