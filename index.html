@@ -28,7 +28,7 @@
     body {
         background: rgb(157, 206, 247);
     }
-
+   
     .navh {
         display: flexbox;
         /* height: 80px; */
@@ -192,18 +192,29 @@
         margin: auto;
         box-shadow: 4px 4px 7px 1px #888888;
     }
-
     #submit-dark {
-        border: 1px solid black;
-        background-color: rgb(130, 71, 224);
-        box-shadow: -5px 5px 15px 4px rgb(78, 58, 119);
-        padding-bottom: 31px;
+        border: 1px solid white;
+
+        background-color: rgb(238,130,238);
+        color: white;
+        /* padding-bottom: 31px; */
         position: relative;
-        top: 80vh;
-        background-color: rgb(61, 36, 102);
-        width: 620px;
-        height: 57px;
+
+        /* width: 627px; */
+        width: 50%;
+        height: 30%;
+        min-width: 150px;
+        color: black;
+        font-size: 2.3rem;
+        border-radius: 16px;
+        /* margin-left: 10rem;
+        margin-top: 2rem; */
+        display: block;
+        margin: auto;
+        box-shadow: 4px 4px 7px 1px #888888;
     }
+
+    
 
     #submit-dark:hover {
         background: linear-gradient(to right,
@@ -378,6 +389,7 @@
     .dark .Social-links li a {
         color: white;
     }
+   
 
     @media only screen and (max-width: 768px) {
         .Social-links li a {
@@ -398,10 +410,7 @@
         word-spacing: 3px;
     }
 
-    .dark {
-        background-color: rgb(29, 29, 29);
-        color: black;
-    }
+   
 
     #headerr-dark {
         background-color: rgb(245, 237, 237);
@@ -526,8 +535,8 @@
     #third {
         margin-bottom: 7px;
     }
-
-
+    
+   
     /* styling the result div and calculate new */
     @media only screen and (max-width: 800px) {
         .result-div {
@@ -584,7 +593,7 @@
 
 
             <main>
-                <div class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+                <div id="container_2" class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
 
 
 
@@ -642,13 +651,13 @@
                 <!-- changes done -->
 
 
-                <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
+               <!--  <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
                 <script>
                     function darkmode() {
                         var element = document.body;
                         element.classList.toggle("dark");
                     }
-                </script>
+                </script> -->
                 <script src="assets/index.js"></script>
 </body>
 
@@ -664,11 +673,28 @@
 <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
 
 <script>
-    function darkmode() {
-        var element = document.body;
-        element.classList.toggle("dark");
-        document.getElementById("submit").style.backgroundColor = "rgb(130, 71, 224)";
+    var darkmodeactive = "False";
+  function darkmode() {
+    if(darkmodeactive == "False"){
+        darkmodeactive = "True";
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "rgb(5,5,10)";
+        document.getElementById('submit').setAttribute('id', 'submit-dark');
+        document.body.classList.toggle("dark");
+    
+      }
+    else{
+        lightmode();
     }
+  }
+  function lightmode(){
+    darkmodeactive = "False";
+    document.body.style.backgroundColor = "rgb(147,206,247)";
+    document.body.style.color = "black";
+    document.getElementById('submit-dark').setAttribute('id', 'submit');
+  
+}
+
 </script>
 <script>
 
