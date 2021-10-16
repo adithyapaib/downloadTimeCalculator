@@ -2,7 +2,7 @@
 
 # downloadTimeCalculator
 A site to get approximate download time
-built on html css and js
+built on HTML CSS and JS
 
 ## HACKTOBERFEST IMPORTANT NOTICE
 
@@ -68,8 +68,6 @@ For support, email paiadithya26@gmail.com
 
 
 ## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
  
