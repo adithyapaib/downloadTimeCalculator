@@ -43,7 +43,7 @@ I'm a Front-End Developer and Open-Source Enthusiast.
 
   
 ## 🛠 Skills
-Javascript, HTML, CSS...
+Javascript, HTML, CSS...etc
 
 ## Authors
 
@@ -64,7 +64,7 @@ If you have any feedback, please reach out to us at paiadithya26@gmail.com
 
 ## Support
 
-For support, email paiadithya26@gmail.com
+For support,contact on my email paiadithya26@gmail.com
 
 
 ## License
