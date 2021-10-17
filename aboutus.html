@@ -339,19 +339,30 @@
         font-size: 35px;
     }
 
-    a.navlink {
-        border-radius: 5px;
-        padding: 8px;
+    a.navlink{
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         letter-spacing: .075rem;
+       border-radius: 2.5rem;
+        padding: .6rem 1rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
     }
 
-    a.navlink:hover {
+    a.navlink:hover{
+        transition: all ease-in-out .3s;
         text-decoration: none;
         background-color: #17a2b8;
-        color: black;
+        color: white;
+        box-shadow: 5px 10px 20px red inset;
     }
 
     .fas:hover {
-        transform: scale(1.5);
+        transition: all ease-in .5s;
+  transform: scale(1.5);
+    }
+
+    a:hover {
+        text-decoration: none;
     }
 
     /*making it responsive*/

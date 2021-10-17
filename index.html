@@ -49,16 +49,9 @@
     body {
         background: rgb(157, 206, 247);
     }
-   
-    .navh {
-        display: flexbox;
-        /* height: 80px; */
-    }
 
     a:hover {
         text-decoration: none;
-        color: rgb(240, 144, 0);
-        font-size: 23px;
     }
 
     .ml-1,
@@ -564,17 +557,24 @@
 
 
      a.navlink{
-       border-radius: 5px;
-        padding: 8px;
+         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         letter-spacing: .075rem;
+       border-radius: 2.5rem;
+        padding: .6rem 1rem;
+        margin-left: .5rem;
+        margin-right: .5rem;
     }
 
     a.navlink:hover{
+        transition: all ease-in-out .3s;
         text-decoration: none;
         background-color: #17a2b8;
-        color: black;
+        color: white;
+        box-shadow: 5px 10px 20px red inset;
     }
 
     .fas:hover {
+        transition: all ease-in .5s;
   transform: scale(1.5);
     }
 
@@ -612,11 +612,11 @@
           <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
     
     
-            <a class=" hover:text-white navlink" href="index.html">Main Page</a>
-            <a class="mr-5 ml-5 hover:text-white navlink" href="aboutus.html">About Us</a>
+            <a class="hover:text-white navlink" href="index.html">Main Page</a>
+            <a class="hover:text-white navlink" href="aboutus.html">About Us</a>
     
             <a class="hover:text-white navlink" href="File.html">File Transfer </a>
-            <a class="mr-5 ml-5 hover:text-white navlink" href="#">Fourth Link</a>
+            <a class="hover:text-white navlink" href="#">Fourth Link</a>
     
           </nav>
     
