@@ -87,7 +87,7 @@
     }
 
     a {
-        color: rgb(157, 206, 247);
+        color: #2ac8f8;
         font-size: 1.3rem;
         text-decoration: none;
         background-color: transparent;
@@ -540,8 +540,23 @@
     #third {
         margin-bottom: 7px;
     }
-    
-   
+
+
+     a.navlink{
+       border-radius: 5px;
+        padding: 8px;
+    }
+
+    a.navlink:hover{
+        text-decoration: none;
+        background-color: #17a2b8;
+        color: black;
+    }
+
+    .fas:hover {
+  transform: scale(1.5);
+    }
+
     /* styling the result div and calculate new */
     @media only screen and (max-width: 800px) {
         .result-div {
@@ -565,31 +580,29 @@
 
 
     <header class="text-gray-400 bg-gray-900 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center navh">
-            <a class="flex title-font font-medium items-center text-white mb-lg-1 mb-4 ml-lg-0 ml-5" href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
-                </svg>
-                <span class="ml-3 text-xl">Download Time Predictor</span>
-            </a>
-            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center navh">
-
-
-                <a class=" navlink" href="index.html">Main Page</a>
-                <a class="mr-5 ml-5 navlink" href="aboutus.html">About Us</a>
-                <a class=" navlink" href="File.html">File Transfer</a>
-                <a class="mr-5 ml-5  navlink" href="#">Fourth Link</a>
-
-
-
-            </nav>
-
-            <button onclick="darkmode()" class="toggle"><i class="fas fa-lightbulb"></i></i></button>
-
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-lg-1 mb-4 ml-lg-0 ml-5" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+            </svg>
+            <span class="ml-3 text-xl">Download Time Predictor</span>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+    
+    
+            <a class=" hover:text-white navlink" href="index.html">Main Page</a>
+            <a class="mr-5 ml-5 hover:text-white navlink" href="aboutus.html">About Us</a>
+    
+            <a class="hover:text-white navlink" href="File.html">File Transfer </a>
+            <a class="mr-5 ml-5 hover:text-white navlink" href="#">Fourth Link</a>
+    
+          </nav>
+    
+          <button onclick="darkmode()" class="toggle"><i class="fas fa-lightbulb"></i></i></button>
+    
         </div>
-    </header>
+      </header>
 
     <div id="alert"></div>
 
