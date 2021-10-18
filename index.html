@@ -641,7 +641,7 @@
                         <div class="flex flex-col gap-y-2">
                             <label>Enter your Internet speed</label>
                             <input type="number" placeholder="Enter speed and select unit" id="speed"
-                                class="border-2 border-black rounded-md p-4" min="0"
+                                class="border-2 border-black rounded-md p-4" min="0" step="any" 
                                 oninput="validity.valid||(value='');">
                             <select id="unit" class="border-2 border-black rounded-md p-2">
                                 <option value="mbps">Mbps</option>
@@ -654,7 +654,7 @@
                         </div>
                         <div class="flex flex-col gap-y-2">
                             <label>File size (GB)</label>
-                            <input type="number" min="1" placeholder="File size in GB" id="size" class="p-4">
+                            <input type="number" min="1" step="any"  placeholder="File size in GB"  id="size" class="p-4"  oninput="validity.valid||(value='');>
                         </div>
                         <div class="btn-center">
                             <button type="button" id="submit" class="button">Submit</button>
