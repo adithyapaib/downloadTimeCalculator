@@ -14,25 +14,25 @@
                 margin: 0;
             }
             h2{
-                color: black;
+                color: white;
                 font-family: 'Courier New', Courier, monospace;
                 font-weight:bold;
             }
             button{
-                background-color:orangered;
-                color: whitesmoke;
+                background-color:powderblue;
+                color: green;
                 font-size: 18px;
             }
             .button:hover{
                 border:1px solid yellow ;
-                background: yellow;
+                background: orange;
                 transition:1s;
                 transform: scale(1.2);
                 z-index:1;
             }
             body.dark{
-                --background-color: rgba(37, 31, 31, 0.685);
-                --text-color: white;
+                --background-color: aqua;
+                --text-color: pink;
                 --accent-color:rgb(214, 214, 78);
             }
 
@@ -40,8 +40,8 @@
 
     </head>
     <body>
-        <h2>Dark Mode/Light Mode</h2>
-        <button type="submit">Change the Mode</button>
+        <h2>Light mode/Dark mode</h2>
+        <button type="Submit">Change the Mode</button>
     </body>
     <script>
         document.querySelector('button').addEventListener('click',() =>
