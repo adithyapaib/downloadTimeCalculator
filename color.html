@@ -4,49 +4,12 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=devicewidth , initial-scale=1.0">
         <title>Document</title>
-        <style>
-            body{
-                display: flex;
-                flex-direction: column;
-                justify-content: right;
-                align-items: center;
-                height: 100vh;
-                margin: 0;
-            }
-            h2{
-                color: black;
-                font-family: 'Georgia', Courier, monospace;
-                font-weight:bold;
-            }
-            button{
-                background-color:red;
-                color: whitesmoke;
-                font-size: 18px;
-            }
-            .button:hover{
-                border:1px solid green ;
-                background: red;
-                transition:1s;
-                transform: scale(1.2);
-                z-index:1;
-            }
-            body.dark{
-                --background-color: rgba(37, 31, 31, 0.685);
-                --text-color: blue;
-                --accent-color:rgb(214, 214, 78);
-            }
-
-        </style>
+        <link rel="stylesheet" href="./static/color.css">
 
     </head>
     <body>
         <h2>Dark Mode/Light Mode</h2>
         <button type="submit">Change the Mode</button>
     </body>
-    <script>
-        document.querySelector('button').addEventListener('click',() =>
-        {
-            document.body.classList.toggle('dark');
-        })
-    </script>
+   <script src="./static/color.js"></script>
 </html>
