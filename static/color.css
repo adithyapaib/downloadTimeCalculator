@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h2{
+    color: black;
+    font-family: 'Georgia', Courier, monospace;
+    font-weight:bold;
+}
+button{
+    background-color:red;
+    color: whitesmoke;
+    font-size: 18px;
+}
+.button:hover{
+    border:1px solid green ;
+    background: red;
+    transition:1s;
+    transform: scale(1.2);
+    z-index:1;
+}
+body.dark{
+    --background-color: rgba(37, 31, 31, 0.685);
+    --text-color: blue;
+    --accent-color:rgb(214, 214, 78);
+}
