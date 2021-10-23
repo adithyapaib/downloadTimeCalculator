@@ -11,7 +11,7 @@
     <link href="https://img.icons8.com/emoji/48/000000/owl-emoji.png" rel="shortcut icon" type=image/x-icon>
     <meta content="https://img.icons8.com/emoji/48/000000/owl-emoji.png" property=og:image>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Download Time Calculator 🌎</title>
+    <title>Download Time Calculator</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css"
     integrity="sha512-5D0ofs3AsWoKsspH9kCWlY7qGxnHvdN/Yz2rTNwD9L271Mno85s+5ERo03qk9SUNtdgOZ4A9t8kRDexkvnWByA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -21,11 +21,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="./assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./static/index.css">
+
+    <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
+
+<script src="./static/index.js"></script>
+<!-- Bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 </head>
 
 
 <!---------------------------------------------CSS STARTS HERE----------------------------------------------------------->
-<link rel="stylesheet" href="./static/index.css">
+
 <!---------------------------------------------------------------------CSS ENDS HERE-------------------------------------------------------------------------------->
 
 
@@ -41,17 +56,14 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                 d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
             </svg>
-            <span class="ml-3 text-xl">Download Time Predictor</span>
+            <span class="ml-3 text-xl">Download Time Calculator</span>
           </a>
           <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
     
     
             <a class="hover:text-white navlink" href="index.html">Main Page</a>
             <a class="hover:text-white navlink" href="aboutus.html">About Us</a>
-    
-            <a class="hover:text-white navlink" href="File.html">File Transfer </a>
-            <a class="hover:text-white navlink" href="#">Fourth Link</a>
-    
+            <a class="hover:text-white navlink" href="File.html">File Transfer</a>    
           </nav>
     
           <button onclick="darkmode()" id="toggle"></button>
@@ -84,14 +96,14 @@
                             </select>
                         </div>
                         <div class="link-center">
-                            <p><a href="https://www.speedtest.net/">I don't know my internet speed</a></p>
+                            <p><a href="https://fast.com">Know your internet speed!</a></p>
                         </div>
                         <div class="flex flex-col gap-y-2">
                             <label>File size (GB)</label>
                             <input type="number" min="1" step="any"  placeholder="File size in GB"  id="size" class="p-4"  oninput="validity.valid"||(value='')>
                         </div>
                         <div class="btn-center">
-                            <button type="button" id="submit" class="button">Submit</button>
+                            <button type="button" id="submit" class="button">Calculate</button>
                         </div>
                     </form>
 
@@ -108,7 +120,7 @@
                 </div>
 
 
-                <!-- changes done -->
+
                 <div class="footer-basic box box3 " id="footer">
                     <div>
                         <ul class="Social-links">
@@ -139,10 +151,26 @@
 
 <!-------------------------------------------------------------------BODY ENDS HERE------------------------------------------------------------------------------>
 
-<footer id="copyright">
+                
+                    
+                        <div class="footer-basic box box3 " id="footer">
+                            <div>
+                                <ul class="Social-links">
+                                    <!--Enter your profile links here-->
+                                    <li class="github"><a href="https://github.com/adithyapaib" target="_blank"><i class="fab fa-github iconn"></i></a></li>
+                                    <li class="linkedin"><a href="https://www.linkedin.com/in/adithyapaib" target="_blank"><i class="fab fa-linkedin-in iconn"></i></a></li>
+                                    <li class="gmail"><a href="mailto: paiadithya26@gmail.com" target="_blank"><i class="fas fa-at iconn"></i></a></li>
+                                    <li class="twitter"><a href="https://twitter.com/adithyapaib" target="_blank"><i class="fab fa-twitter  iconn"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+<footer id="footer">
     <div class="center">
-        Copyright &copy;2021.All rights reserved!
+        Copyright &copy; 2021, All rights reserved.
     </div>
+
 </footer>
 </main>
 
@@ -163,5 +191,8 @@
 <!----------------------------------------------------------------JAVASCRIPT ENDS HERE------------------------------------------------------------------------------>
 
 
+
+
+</body>
 
 </html>
