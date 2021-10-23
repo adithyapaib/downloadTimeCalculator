@@ -23,6 +23,10 @@ h2.head {
         background: rgb(157, 206, 247);
     }
 
+    #toggle{
+        transition: all 0.5s ease-out;
+    }
+
     a:hover {
         text-decoration: none;
     }
@@ -158,12 +162,7 @@ h2.head {
         box-shadow: 5px 5px 12px 1px rgb(48, 45, 45);
     }
 
-    .toggle {
-        float: right;
-        font-size: 2em;
-        text-align: center;
-        cursor: pointer;
-    }
+   
 
     #submit {
         border: 1px solid white;
