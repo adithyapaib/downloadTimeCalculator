@@ -1,8 +1,8 @@
 
 
-# downloadTimeCalculator
+# Download Time Calculator
 A site to get approximate download time
-built on HTML CSS and JS
+built using HTML CSS and JavaScript!
 
 ## HACKTOBERFEST IMPORTANT NOTICE
 
@@ -11,7 +11,8 @@ built on HTML CSS and JS
 For any Queries you can reach me via https://www.linkedin.com/in/adithyapaib/
 
 ## Demo
-https://adithyapaib.github.io/downloadTimeCalculator/
+
+[Demo Site](https://adithyapaib.github.io/downloadTimeCalculator/)
 
 # Screenshot
 ![image](https://user-images.githubusercontent.com/37355997/135632298-28710886-41df-4c88-92c5-b32658414e26.png)
@@ -53,9 +54,9 @@ Javascript, HTML, CSS...etc
 
 Contributions are always welcome!
 
-See **Issues section** for ways to get started.
+See [Issues](https://github.com/adithyapaib/downloadTimeCalculator/issues) section for ways to get started.
 
-Please adhere to this project's **code of conduct**.
+Please adhere to this project's [Code Of Conduct](https://github.com/adithyapaib/downloadTimeCalculator/CODE_OF_CONDUCT.md)
 
   
 ## Feedback
