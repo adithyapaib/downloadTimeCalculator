@@ -221,6 +221,7 @@
                     minutes = `min`
                 fileTime = `${fileHours}hrs, ${fileMinutes}${minutes}, ${fileSeconds}s `;
                 document.getElementById('output').style.display = 'block'
+                document.getElementById('output').style.height =  '17rem'
                 document.getElementById("download").innerHTML = `Download speed: ${downloadSpeed}MBps`;
                 document.getElementById("sent").innerHTML = `Approximate time to transfer the file`;
                 document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
