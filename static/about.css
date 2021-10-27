@@ -236,6 +236,10 @@ color:#ffffff;
   transition: all 0.5s ease-out;
   box-shadow: 5px 5px 12px 1px rgb(48, 45, 45);
 }
+#contact-btn:hover::after{
+  content: "👇";
+}
+
 
 @keyframes blink-animation {
   to {
