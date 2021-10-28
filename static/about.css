@@ -223,6 +223,24 @@ input {
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
 }
 
+#contact-btn:hover{
+color:#ffffff; 
+ border-radius: 5px;
+ background: linear-gradient(
+    to left,
+    rgb(243, 100, 100) 50%,
+    rgb(100, 98, 98) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+  box-shadow: 5px 5px 12px 1px rgb(48, 45, 45);
+}
+#contact-btn:hover::after{
+  content: "👇";
+}
+
+
 @keyframes blink-animation {
   to {
     visibility: hidden;
@@ -236,7 +254,8 @@ input {
 }
 
 #contact {
-  text-decoration: underline;
+/*   text-decoration: underline; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif!important;
   text-shadow: 2px 2px 2px black;
   margin-top: 7px;
   margin-bottom: 25px;
@@ -244,7 +263,8 @@ input {
 
 .namemt-3 {
   margin-top: 40px;
-  font-family: serif;
+/*   font-family: serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif!important;
   font-weight: bolder;
   color: rgb(218, 194, 90);
   text-shadow: 4px 3px 5px rgba(116, 37, 233, 0.66);
@@ -263,7 +283,8 @@ input {
 }
 
 .programtext {
-  font-family: serif;
+/*   font-family: serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif!important;
   font-size: 22px;
   width: 60%;
   margin: auto;
@@ -325,8 +346,9 @@ input {
 }
 
 a.navlink {
-  font-family: "Times New Roman", "Gill Sans MT", Calibri, "Trebuchet MS",
-    sans-serif;
+/*   font-family: "Times New Roman", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif!important;
   letter-spacing: 0.075rem;
   border-radius: 2.5rem;
   padding: 0.6rem 1rem;
@@ -418,7 +440,7 @@ a:hover {
   }
 
   a.navlink {
-    border-radius: 5px;
+    border-radius: 2.5rem;
     padding: 8px;
   }
 
