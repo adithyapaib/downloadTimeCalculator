@@ -9,7 +9,7 @@ var darkmodeactive = "False";
      darkmodeactive = "True";
      
      
-     document.body.style.backgroundColor = "black";
+     document.body.style.backgroundColor = "#02112b";
      document.body.style.color = "rgb(5,5,10)";
         document.getElementById('submit').setAttribute('id', 'submit-dark');
     

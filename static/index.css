@@ -275,6 +275,7 @@ h2.head {
         height: 150px;
         margin-top: 110px;
         align-items: center;
+        border-radius: 25px;
     }
 
     .box3 ul {
