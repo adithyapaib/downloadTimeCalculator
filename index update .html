@@ -30,256 +30,262 @@
 
 
 <!-------------------------------------------------------------------BODY STARTS HERE------------------------------------------------------------------------------->
+
 <body>
 
 
-  <header class="text-gray-400 bg-gray-900 body-font">
-    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-      <a class="flex title-font font-medium items-center text-white mb-lg-1 mb-4 ml-lg-0 ml-5" href="index.html">
-        <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-            d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
-        </svg>
-        <span class="ml-3 text-xl">Download Time Predictor</span>
-      </a>
-      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-white mb-lg-1 mb-4 ml-lg-0 ml-5" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ml-1 h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                </svg>
+                <span class="ml-3 text-xl">Download Time Predictor</span>
+            </a>
+            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
 
 
-        <a class=" hover:text-white" href="index.html">Main Page</a>
-        <a class="mr-5 ml-5 hover:text-white" href="aboutus.html">About Us</a>
-        <a class="hover:text-white" href="File.html">File Transfer</a>
-        <a class="mr-5 ml-5 hover:text-white" href="#">Fourth Link</a>
+                <a class=" hover:text-white" href="index.html">Main Page</a>
+                <a class="mr-5 ml-5 hover:text-white" href="aboutus.html">About Us</a>
+                <a class="hover:text-white" href="File.html">File Transfer</a>
+                <a class="mr-5 ml-5 hover:text-white" href="#">Fourth Link</a>
 
 
-      </nav>
+            </nav>
 
-      <button onclick="darkmode()" class="toggle"><i class="fas fa-adjust"></i></button>
+            <button onclick="darkmode()" class="toggle"><i class="fas fa-adjust"></i></button>
 
+        </div>
+    </header>
+    <div class="himage">
+        <img src="https://c.tenor.com/_PGkN2EwyDIAAAAj/zeitersparnis-zu-sp%C3%A4t.gif" alt="">
     </div>
-  </header>
-  <div class="himage">
-  <img src="https://c.tenor.com/_PGkN2EwyDIAAAAj/zeitersparnis-zu-sp%C3%A4t.gif" alt="">
-  </div>
-  <div id = "input-container" class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
-    <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
-      
-       
-    <main>
-        <div class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
-           
-                <h2 class="head">Download Time Predictor</h2>
-                <form id="form" class="w-full px-4 space-y-9">
-                    <div class="flex flex-col gap-y-2">
-                        <label>Enter your Internet speed (Mbps)</label>
-                        <input type="number" min="1" placeholder="Internet speed in Mbps" id="speed" class="p-4">
-                    </div>
-                    <div class="flex flex-col gap-y-2">
-                        <label>File size (GB)</label>
-                        <input type="number" min="1" placeholder="File size in GB" id="size" class="p-4">
-                    </div>
-                    <div class="btn-center">
-                        <button type="button" id="submit" class="button">Submit</button>
-                    </div>
-                </form>
+    <div id="input-container" class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+        <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
 
-                <div id="output"
-                    class="result-division-bottom bg-red-100 hidden rounded-md p-8 flex flex-col items-center justify-center">
-                    <div class="w-full mx-auto text-center">
-                        <p id="download" class="font-semibold"></p>
-                        <p id="sent"></p>
-                        <p id="onespeed"></p>
-                        <p id="filespeed"></p>
-                        <p id="reload"></p>
-                    </div>
+
+            <main>
+                <div class="container2 w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+
+                    <h2 class="head">Download Time Predictor</h2>
+                    <form id="form" class="w-full px-4 space-y-9">
+                        <div class="flex flex-col gap-y-2">
+                            <label>Enter your Internet speed (Mbps)</label>
+                            <input type="number" min="1" placeholder="Internet speed in Mbps" id="speed" class="p-4">
+                        </div>
+                        <div class="flex flex-col gap-y-2">
+                            <label>File size (GB)</label>
+                            <input type="number" min="1" placeholder="File size in GB" id="size" class="p-4">
+                        </div>
+                        <div class="btn-center">
+                            <button type="button" id="submit" class="button">Submit</button>
+                        </div>
+                    </form>
+
+                    <div id="output"
+                        class="result-division-bottom bg-red-100 hidden rounded-md p-8 flex flex-col items-center justify-center">
+                        <div class="w-full mx-auto text-center">
+                            <p id="download" class="font-semibold"></p>
+                            <p id="sent"></p>
+                            <p id="onespeed"></p>
+                            <p id="filespeed"></p>
+                            <p id="reload"></p>
+                        </div>
 
 
 
+                    </div>
                 </div>
-        </div>
 
 
-  <!-- changes done -->
-    <div class="footer-basic box box3 " id="footer">
-        <div>
-            <ul class="Social-links">
-                <!--Enter your profile links here-->
-                <li class="github"><a href="https://github.com/adithyapaib" target="_blank"><i class="fab fa-github iconn"></i></a></li>
-                <li class="linkedin"><a href="https://www.linkedin.com/in/adithyapaib" target="_blank"><i class="fab fa-linkedin-in iconn"></i></a></li>
-                <li class="gmail"><a href="mailto: paiadithya26@gmail.com" target="_blank"><i class="fas fa-at iconn"></i></a></li>
-                <li class="twitter"><a href="https://twitter.com/adithyapaib" target="_blank"><i class="fab fa-twitter  iconn"></i></a></li>
-            </ul>
-        </div>
-    </div>
-    <!-- changes done -->
+                <!-- changes done -->
+                <div class="footer-basic box box3 " id="footer">
+                    <div>
+                        <ul class="Social-links">
+                            <!--Enter your profile links here-->
+                            <li class="github"><a href="https://github.com/adithyapaib" target="_blank"><i
+                                        class="fab fa-github iconn"></i></a></li>
+                            <li class="linkedin"><a href="https://www.linkedin.com/in/adithyapaib" target="_blank"><i
+                                        class="fab fa-linkedin-in iconn"></i></a></li>
+                            <li class="gmail"><a href="mailto: paiadithya26@gmail.com" target="_blank"><i
+                                        class="fas fa-at iconn"></i></a></li>
+                            <li class="twitter"><a href="https://twitter.com/adithyapaib" target="_blank"><i
+                                        class="fab fa-twitter  iconn"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- changes done -->
 
 
-  <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
-  <script>
-    function darkmode() {
-      var element = document.body;
-      element.classList.toggle("dark");
-    }
-  </script>
-  <script src="assets/index.js"></script>
+                <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
+                <script>
+                    function darkmode() {
+                        var element = document.body;
+                        element.classList.toggle("dark");
+                    }
+                </script>
+                <script src="assets/index.js"></script>
 </body>
 
 
-        <footer id="copyright">
-            <div class="center">
-                Copyright &copy;2021.All rights reserved!
-            </div>
-        </footer>
-    </main>
+<footer id="copyright">
+    <div class="center">
+        Copyright &copy;2021.All rights reserved!
+    </div>
+</footer>
+</main>
 
 <!----------------------------------------------------------------JAVASCRIPT STRATS HERE--------------------------------------------------------------------------------->
-    <script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/dde7c31825.js" crossorigin="anonymous"></script>
 
-    <script>
-        function darkmode() {
-            var element = document.body;
-            element.classList.toggle("dark");
-            document.getElementById("submit").style.backgroundColor = "rgb(130, 71, 224)";
+<script>
+    function darkmode() {
+        var element = document.body;
+        element.classList.toggle("dark");
+        document.getElementById("submit").style.backgroundColor = "rgb(130, 71, 224)";
+    }
+</script>
+<script>
+    document.getElementById("submit").addEventListener("click", best);
+    function best(event) {
+        event.preventDefault();
+        let speed = document.getElementById("speed").value;
+        let size = document.getElementById("size").value;
+        if (speed == "" || size == "") {
+            alert("Please fill all the fields");
         }
-    </script>
-    <script>
-        document.getElementById("submit").addEventListener("click", best);
-        function best(event) {
-            event.preventDefault();
-            let speed = document.getElementById("speed").value;
-            let size = document.getElementById("size").value;
-            if (speed == "" || size == "") {
-                alert("Please fill all the fields");
-            }
-            else {
-                let downloadSpeed = speed;
-                let oneGB = parseFloat(1024 / downloadSpeed);
-                let oneGBhours = Math.floor(oneGB / 60 / 60);
-                let oneGBminutes = Math.floor(oneGB / 60) - (oneGBhours * 60);
-                let oneGBseconds = Math.round(oneGB % 60, 3);
-                let oneGBTime;
-                let minutes;
-                minutes = 'mins';
-                if (parseInt(oneGBminutes) == 1)
-                    minutes = `min`
-                oneGBTime = `${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `
-                if (oneGBhours == 0)
-                    oneGBTime = `${oneGBminutes}${minutes}, ${oneGBseconds}s `
-                let file = (parseInt(size) * 1024) / downloadSpeed;
-                let fileHours = Math.floor(file / 60 / 60);
-                let fileMinutes = Math.floor(file / 60) - (fileHours * 60);
-                let fileSeconds = Math.round(file % 60, 3);
-                let fileTime;
-                minutes = 'mins';
-                if (parseInt(fileMinutes) == 1)
-                    minutes = `min`
-                fileTime = `${fileHours}hrs, ${fileMinutes}${minutes}, ${fileSeconds}s `;
-                document.getElementById('output').style.display = 'block'
-                document.getElementById("download").innerHTML = `Download speed: ${downloadSpeed}MBps`;
-                document.getElementById("sent").innerHTML = `Approximate time required to download`;
-                document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
-                document.getElementById("filespeed").innerHTML = `${size}GB file: ${fileTime}`;
-                document.getElementById("reload").innerHTML = `<br><br><button id="Calculate" onclick="document.location='index.html'">CALCULATE NEW</button>`;
-                document.getElementById("output").style.background = '#07C962'
-                document.getElementById("Calculate").style.background = '#000000'
-                document.getElementById("Calculate").style.color = '#FFFFFF'
-                document.getElementById("Calculate").style.padding = '16px'
-                document.getElementById("Calculate").style.borderRadius = '12px'
-                console.log(oneGBTime);
-                console.log(fileTime)
-            }
+        else {
+            let downloadSpeed = speed;
+            let oneGB = parseFloat(1024 / downloadSpeed);
+            let oneGBhours = Math.floor(oneGB / 60 / 60);
+            let oneGBminutes = Math.floor(oneGB / 60) - (oneGBhours * 60);
+            let oneGBseconds = Math.round(oneGB % 60, 3);
+            let oneGBTime;
+            let minutes;
+            minutes = 'mins';
+            if (parseInt(oneGBminutes) == 1)
+                minutes = `min`
+            oneGBTime = `${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `
+            if (oneGBhours == 0)
+                oneGBTime = `${oneGBminutes}${minutes}, ${oneGBseconds}s `
+            let file = (parseInt(size) * 1024) / downloadSpeed;
+            let fileHours = Math.floor(file / 60 / 60);
+            let fileMinutes = Math.floor(file / 60) - (fileHours * 60);
+            let fileSeconds = Math.round(file % 60, 3);
+            let fileTime;
+            minutes = 'mins';
+            if (parseInt(fileMinutes) == 1)
+                minutes = `min`
+            fileTime = `${fileHours}hrs, ${fileMinutes}${minutes}, ${fileSeconds}s `;
+            document.getElementById('output').style.display = 'block'
+            document.getElementById("download").innerHTML = `Download speed: ${downloadSpeed}MBps`;
+            document.getElementById("sent").innerHTML = `Approximate time required to download`;
+            document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
+            document.getElementById("filespeed").innerHTML = `${size}GB file: ${fileTime}`;
+            document.getElementById("reload").innerHTML = `<br><br><button id="Calculate" onclick="document.location='index.html'">CALCULATE NEW</button>`;
+            document.getElementById("output").style.background = '#07C962'
+            document.getElementById("Calculate").style.background = '#000000'
+            document.getElementById("Calculate").style.color = '#FFFFFF'
+            document.getElementById("Calculate").style.padding = '16px'
+            document.getElementById("Calculate").style.borderRadius = '12px'
+            console.log(oneGBTime);
+            console.log(fileTime)
         }
+    }
 
-        document.getElementById("submit").addEventListener("click", best);
+    document.getElementById("submit").addEventListener("click", best);
 
-        function best() {
-            let speed = document.getElementById("speed").value;
-            let size = document.getElementById("size").value;
-            if (speed === "" || size === "") {
-                alert("Please fill all the fields");
-            } else {
-                let downloadSpeed = speed;
-                let oneGB = parseFloat(1024 / downloadSpeed);
-                let oneGBhours = Math.floor(oneGB / 60 / 60);
-                let oneGBminutes = Math.floor(oneGB / 60) - oneGBhours * 60;
-                let oneGBseconds = Math.round(oneGB % 60, 3);
-                var Day = 0;
-                var Week = 0;
+    function best() {
+        let speed = document.getElementById("speed").value;
+        let size = document.getElementById("size").value;
+        if (speed === "" || size === "") {
+            alert("Please fill all the fields");
+        } else {
+            let downloadSpeed = speed;
+            let oneGB = parseFloat(1024 / downloadSpeed);
+            let oneGBhours = Math.floor(oneGB / 60 / 60);
+            let oneGBminutes = Math.floor(oneGB / 60) - oneGBhours * 60;
+            let oneGBseconds = Math.round(oneGB % 60, 3);
+            var Day = 0;
+            var Week = 0;
 
-                if (parseInt(oneGBhours) > 24) Day = parseInt(oneGBhours) / 24;
-                if (parseInt(Day) > 7) Week = parseInt(Day) / 7;
+            if (parseInt(oneGBhours) > 24) Day = parseInt(oneGBhours) / 24;
+            if (parseInt(Day) > 7) Week = parseInt(Day) / 7;
 
-                let oneGBTime;
-                let minutes;
-                minutes = "mins";
+            let oneGBTime;
+            let minutes;
+            minutes = "mins";
 
-                if (parseInt(oneGBminutes) == 1) minutes = `min`;
-                oneGBTime = `${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
+            if (parseInt(oneGBminutes) == 1) minutes = `min`;
+            oneGBTime = `${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
 
-                if (oneGBhours == 0)
-                    oneGBTime = `${oneGBminutes}${minutes}, ${oneGBseconds}s `;
+            if (oneGBhours == 0)
+                oneGBTime = `${oneGBminutes}${minutes}, ${oneGBseconds}s `;
 
-                if (Day > 0)
-                    oneGBTime = `${parseInt(
-                        Day
-                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
+            if (Day > 0)
+                oneGBTime = `${parseInt(
+                    Day
+                )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
 
-                if (parseInt(Day) > 0)
-                    oneGBTime = `${parseInt(
-                        Day
-                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
+            if (parseInt(Day) > 0)
+                oneGBTime = `${parseInt(
+                    Day
+                )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
 
-                if (parseInt(Week) > 0)
-                    oneGBTime = `${parseInt(Week)}weeks, ${parseInt(
-                        Day
-                    )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
+            if (parseInt(Week) > 0)
+                oneGBTime = `${parseInt(Week)}weeks, ${parseInt(
+                    Day
+                )}days, ${oneGBhours}hrs, ${oneGBminutes}${minutes}, ${oneGBseconds}s `;
 
-                let file = (parseInt(size) * 1024) / downloadSpeed;
-                let fileDay =
-                    Math.floor(file / 60 / 60) > 24 ? Math.floor(file / 60 / 60) / 24 : 0;
-                let fileWeek = parseInt(fileDay) > 7 ? fileDay / 7 : 0;
-                let fileHours = Math.floor(file / 60 / 60);
-                let fileMinutes = Math.floor(file / 60) - fileHours * 60;
-                let fileSeconds = Math.round(file % 60, 3);
-                let fileTime;
-                minutes = "mins";
+            let file = (parseInt(size) * 1024) / downloadSpeed;
+            let fileDay =
+                Math.floor(file / 60 / 60) > 24 ? Math.floor(file / 60 / 60) / 24 : 0;
+            let fileWeek = parseInt(fileDay) > 7 ? fileDay / 7 : 0;
+            let fileHours = Math.floor(file / 60 / 60);
+            let fileMinutes = Math.floor(file / 60) - fileHours * 60;
+            let fileSeconds = Math.round(file % 60, 3);
+            let fileTime;
+            minutes = "mins";
 
-                if (parseInt(fileMinutes) == 1) minutes = `min`;
+            if (parseInt(fileMinutes) == 1) minutes = `min`;
 
-                fileTime = `${parseInt(fileWeek)}weeks,
+            fileTime = `${parseInt(fileWeek)}weeks,
      ${parseInt(fileDay)}days,
      ${fileHours}hrs, 
      ${fileMinutes}${minutes}, 
      ${fileSeconds}s `;
 
-                document.getElementById("output").style.display = "block";
+            document.getElementById("output").style.display = "block";
 
-                document.getElementById(
-                    "download"
-                ).innerHTML = `Download speed: ${downloadSpeed}MBps`;
+            document.getElementById(
+                "download"
+            ).innerHTML = `Download speed: ${downloadSpeed}MBps`;
 
-                document.getElementById(
-                    "sent"
-                ).innerHTML = `Approximate time required to download`;
+            document.getElementById(
+                "sent"
+            ).innerHTML = `Approximate time required to download`;
 
-                document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
+            document.getElementById("onespeed").innerHTML = `1 GB file: ${oneGBTime}`;
 
-                document.getElementById(
-                    "filespeed"
-                ).innerHTML = `${size}GB file: ${fileTime}`;
+            document.getElementById(
+                "filespeed"
+            ).innerHTML = `${size}GB file: ${fileTime}`;
 
-                document.getElementById(
-                    "reload"
-                ).innerHTML = `<br><br><a href="index.html"><button id="calculate">CALCULATE NEW</button></a>`;
+            document.getElementById(
+                "reload"
+            ).innerHTML = `<br><br><a href="index.html"><button id="calculate">CALCULATE NEW</button></a>`;
 
-                document.getElementById("output").style.background = "#42a4eb";
-                document.getElementById("output").style.background = "#07C962";
-                console.log(oneGBTime);
-                console.log(fileTime);
-            }
-        }</script>
+            document.getElementById("output").style.background = "#42a4eb";
+            document.getElementById("output").style.background = "#07C962";
+            console.log(oneGBTime);
+            console.log(fileTime);
+        }
+    }</script>
 <!----------------------------------------------------------------JAVASCRIPT ENDS HERE------------------------------------------------------------------------------>
- 
+
 </body>
 <!-------------------------------------------------------------------BODY ENDS HERE------------------------------------------------------------------------------>
- 
+
 </html>
