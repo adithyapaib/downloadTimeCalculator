@@ -46,7 +46,36 @@
 
 
 
+
+    <div class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+        
+        <div class="flex flex-col gap-y-6 mx-auto justfiy-around w-full">
+            <h2 class="font-semibold text-2xl text-center">Download Time Predictor</h2>
+            <form id="form" class="w-full px-4 space-y-9">
+                <div class="flex flex-col gap-y-2">
+                    <label>Enter your Internet speed (Mbps)</label>
+                    <input type="number" placeholder="Internet speed in Mbps" id="speed" class="border-2 border-black rounded-md p-4" value="4">
+                </div>
+                <div class="flex flex-col gap-y-2">
+                    <label>File size (GB)</label>
+                    <input type="number" placeholder="File size in GB" id="size" class="border-2 border-black rounded-md p-4" value="0.1">
+                </div>
+                <button id="submit" type="button" class="w-full text-center bg-black text-white p-4 rounded-md confirmSubmit" id="output">
+                  <b>Submit</b>
+              </button>
+            </form>
+            <div id="output" class="bg-green-400 hidden rounded-md p-6 flex flex-col items-center justify-center">
+                <div class="w-full mx-auto text-center">
+                    <p id="download" class="font-semibold"></p>
+                    <p id="sent"></p>
+                    <p id="onespeed"></p>
+                    <p id="filespeed"></p>
+                    <p id="reload"></p>
+                </div>
+            </div>
+
   <div class="w-full h-screen flex flex-col justify-center max-w-2xl mx-auto items-center">
+
 
     <div class="flex flex-col gap-y-12 mx-auto justfiy-around w-full">
       <h2 class="font-semibold text-2xl text-center">Download Time Predictor</h2>
@@ -77,6 +106,25 @@
       </div>
 
     </div>
+
+
+   
+      
+
+
+  </body>
+  <script
+    src="https://kit.fontawesome.com/dde7c31825.js"
+    crossorigin="anonymous"
+  ></script>
+  <script>
+    function darkmode() {
+      var element = document.body;
+      element.classList.toggle("dark");
+    }
+  </script>
+  <script src="assets/index.js"></script>
+
   </div>
   </div>
 
@@ -99,4 +147,8 @@
 </script>
 <script src="assets/index.js"></script>
 
+
 </html>
+
+</html>
+
