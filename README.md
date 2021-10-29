@@ -1,17 +1,18 @@
 
 
-# downloadTimeCalculator
+# Download Time Calculator
 A site to get approximate download time
-built on html css and js
+built using HTML CSS and JavaScript!
 
 ## HACKTOBERFEST IMPORTANT NOTICE
 
 #### Please make sure you are committing your changes to the right branch 
 #### If you PR to the wrong branch then there will be merge conflicts !!!
-For any Queries pls reach me via https://www.linkedin.com/in/adithyapaib/
+For any Queries you can reach me via https://www.linkedin.com/in/adithyapaib/
 
 ## Demo
-https://adithyapaib.github.io/downloadTimeCalculator/
+
+[Demo Site](https://adithyapaib.github.io/downloadTimeCalculator/)
 
 # Screenshot
 ![image](https://user-images.githubusercontent.com/37355997/135632298-28710886-41df-4c88-92c5-b32658414e26.png)
@@ -43,7 +44,7 @@ I'm a Front-End Developer and Open-Source Enthusiast.
 
   
 ## 🛠 Skills
-Javascript, HTML, CSS...
+Javascript, HTML, CSS...etc
 
 ## Authors
 
@@ -53,9 +54,9 @@ Javascript, HTML, CSS...
 
 Contributions are always welcome!
 
-See **Issues section** for ways to get started.
+See [Issues](https://github.com/adithyapaib/downloadTimeCalculator/issues) section for ways to get started.
 
-Please adhere to this project's **code of conduct**.
+Please adhere to this project's [Code Of Conduct](https://github.com/adithyapaib/downloadTimeCalculator/CODE_OF_CONDUCT.md)
 
   
 ## Feedback
@@ -64,12 +65,10 @@ If you have any feedback, please reach out to us at paiadithya26@gmail.com
 
 ## Support
 
-For support, email paiadithya26@gmail.com
+For support,contact on my email paiadithya26@gmail.com
 
 
 ## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
  

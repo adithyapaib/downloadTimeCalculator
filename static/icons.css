@@ -1,0 +1,70 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h2{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:bold;
+}
+button{
+    background-color:rgb(233, 85, 233);
+    color: whitesmoke;
+    font-size: 18px;
+    box-shadow: 0 0 10px black;
+}
+.button:hover{
+    border:1px solid rgb(56, 240, 39) ;
+    background: rgb(30, 231, 63);
+    transition:1s;
+    transform: scale(1.2);
+    z-index:1;
+}
+.footer {
+    position: relative;
+    bottom: 0px;
+    height: 170px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+.footer .ending {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.footer .follow{
+    flex-basis: 50%;
+}
+
+.footer .follow a{
+    padding-right: 20px;
+}
+.footer .contactinfo {
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+.footer .ending ul {
+    list-style: none;
+}
+.footer h4 {
+    color: black;
+    font-size: 30px;
+    font-weight:bolder;
+    position: relative;
+}
+.footer a{
+    padding: 0 4px 0 6px; 
+}
+.footer .ending ul li{
+    margin-bottom: 8px;
+}
+.footer .contactinfo span{
+    margin-bottom: 8px;
+}
