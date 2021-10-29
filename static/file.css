@@ -1,0 +1,314 @@
+body {
+    background: rgb(157, 206, 247);
+}
+.ml-1,
+.mx-1 {
+    margin-left: -5.75rem !important;
+}
+.p-5 {
+    padding: 2rem !important;
+}
+.p-4 {
+    padding: 1rem !important;
+}
+.ml-3,
+.mx-3 {
+    font-size: 2rem;
+    margin-left: 1rem !important;
+}
+.ml-3,
+.mx-3 {
+    font-size: 2rem;
+    margin-left: 1rem !important;
+    margin-right: 1.5rem;
+}
+.container2 {
+    border: 5px blue;
+    border-radius: 7px;
+    background-color: rgb(197, 255, 197);
+    width: 70%;
+    height: 85vh;
+    /* margin-top: 110px;
+    margin-bottom: 0%; */
+}
+a {
+    color: #2ac8f8;
+    font-size: 1.3rem;
+    text-decoration: none;
+    background-color: transparent;
+}
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    margin-left: 5px;
+    font-size: 25px;
+    font-weight: 620
+}
+input {
+    background: #ffffff;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.151);
+    font-size: 1rem;
+    outline: none;
+    padding: 0%;
+}
+.head {
+    text-shadow: 4px 4px 4px rgba(250, 155, 77, 0.527);
+    margin-top: 0px;
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(240, 144, 0);
+    font-weight: 700;
+}
+.btn-center {
+    display: flex;
+}
+.button {
+    background-color: yellow;
+    border-color: red;
+    color: blue;
+    font-size: 15px;
+    width: 250x;
+    height: 30px;
+    border: 2px solid green;
+}
+#submit:hover {
+    background: linear-gradient(to left,
+            rgb(62, 255, 4) 50%,
+            rgb(5, 5, 5) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    box-shadow: 5px 5px 12px 1px rgb(48, 45, 45);
+}
+.toggle {
+    float: right;
+    font-size: 2em;
+    text-align: center;
+    cursor: pointer;
+}
+#submit {
+    border: 1px solid white;
+    background-color: rgb(240, 144, 0);
+    position: relative;
+    color: white;
+    font-size: 2rem;
+    border-radius: 38px;
+    display: block;
+    margin: auto;
+    margin-top: 0px;
+    /* margin-top: 50px; */
+    padding: 6px;
+    box-shadow: 4px 4px 7px 1px #888888;
+}
+#submit-dark {
+    border: 1px solid black;
+    background-color: rgb(130, 71, 224);
+    box-shadow: -5px 5px 15px 4px rgb(78, 58, 119);
+    padding-bottom: 31px;
+    position: relative;
+    top: 65vh;
+    background-color: rgb(61, 36, 102);
+    width: 620px;
+    height: 57px;
+}
+#submit-dark:hover {
+    background: linear-gradient(to right,
+            rgb(42, 136, 165) 50%,
+            rgb(76, 53, 179) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.5s ease-out;
+    transform: scale(1.3);
+    box-shadow: 2px 8px 20px 4px rgb(41, 105, 165);
+}
+.confirmSubmit {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: centre; 
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.2s;
+    background-color: #145c9e;
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+        inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    outline: none;
+}
+.confirmSubmit:hover,
+.confirmSubmit:focus {
+    background-color: #145c9e;
+    transform: scale(1.02);
+    font-size: large;
+    color: #000;
+    outline: none;
+}
+.confirmSubmit:active {
+    box-shadow: inset -2px -2px 3px rgba(95, 93, 93, 0.6),
+        inset 2px 2px 3px rgba(10, 9, 9, 0.6);
+}
+.gap-y-12 {
+    height: 0vh;
+    position: relative;
+    top: -265px;
+}
+.result-div {
+    display: flex;
+}
+.social a:hover {
+    color: blue;
+}
+.social {
+    margin-bottom: 80px;
+    margin-top: 0%;
+}
+.social a {
+    border: 2px red;
+    background: cornsilk;
+    border-radius: 50%;
+    width: 50px;
+    padding: 10px;
+    margin: 15px;
+    color: red;
+    font-size: 3rem;
+}
+#contact {
+    margin-bottom: 27px;
+    font-size: 1.7rem;
+    color: rgb(49, 49, 49);
+    font-weight: bold;
+    word-spacing: 3px;
+}
+.dark {
+    background-color: rgb(29, 29, 29);
+}
+#headerr-dark {
+    background-color: rgb(245, 237, 237);
+    color: rgb(37, 37, 37);
+}
+#copyright {
+    position: sticky;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(8, 8, 8);
+    color: rgb(238, 237, 231);
+    padding-top: 9px 20px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#footer {
+    margin-top: 200px;
+}
+#header {
+    margin-bottom: 110px;
+    height: 120px;
+}
+#title {
+    font-size: 35px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .result-division-bottom {
+        height: 40%;
+        margin-bottom: 40px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
+
+     /*making it responsive*/
+@media only screen and (max-width: 770px) {
+    #title{
+        display: flex;
+        padding-left: 45px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    nav {
+        margin: 2%;
+        padding: 2%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px blue;
+        background: rgb(3, 65, 90);
+        border-radius: 8px;
+    } 
+
+    .head {
+        margin-top: 15px;
+        font-size: 1.7rem;
+    }
+}
+
+#first{
+    margin-left: 43px;margin-bottom: 7px;
+}
+#second{
+    margin-left: 40px ;margin-bottom: 7px;
+}
+#third{
+    margin-bottom: 7px;
+}
+.output{
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
+.output:first-child{
+  font-weight: 700;
+}
+.output_div{
+   box-sizing: content-box;
+   margin-top: 5%;
+   background-color: rgb(240, 144, 0);
+}
+
+
+a.navlink{
+     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     letter-spacing: .075rem;
+   border-radius: 2.5rem;
+    padding: .6rem 1rem;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+a.navlink:hover{
+    transition: all ease-in-out .3s;
+    text-decoration: none;
+    background-color: #17a2b8;
+    color: white;
+    box-shadow: 5px 10px 20px red inset;
+}
+
+.fas:hover {
+    transition: all ease-in .5s;
+transform: scale(1.5);
+}
+
+a:hover {
+    text-decoration: none;
+}
+/* //slider css */
+
+
+/* Light bulb CSS */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css");
+#darkmode:hover{
+    color: rgb(255, 239, 16);
+}
+
+
+
