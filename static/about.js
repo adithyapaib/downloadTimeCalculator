@@ -1,3 +1,4 @@
+//this function is for dark mode
 function darkmode() {
     var element = document.body;
     element.classList.toggle("dark");
