@@ -116,3 +116,4 @@ For support,contact on my email paiadithya26@gmail.com
 [issues-url]: https://github.com/adithyapaib/downloadTimeCalculator/issues
 [license-shield]: https://img.shields.io/github/license/adithyapaib/downloadTimeCalculator?style=for-the-badge
 [license-url]: https://github.com/adithyapaib/downloadTimeCalculator/blob/master/LICENSE
+Thanks
