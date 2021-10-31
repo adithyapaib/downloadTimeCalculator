@@ -256,7 +256,7 @@ color:#ffffff;
 #contact {
 /*   text-decoration: underline; */
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif!important;
-  text-shadow: 2px 2px 2px black;
+  text-shadow: 2px 2px 2px rgb(252, 249, 249);
   margin-top: 7px;
   margin-bottom: 25px;
 }
@@ -329,7 +329,7 @@ color:#ffffff;
 }
 
 #footer {
-  margin-top: 270px;
+  margin-top: 40px;
 }
 
 #header {
@@ -503,7 +503,7 @@ a:hover {
   width: 25vw;
 }
 .program-heading h1 {
-  color: rgb(1, 116, 197);
+  color: rgb(15, 15, 15);
   /* text-transform: uppercase; */
   font-weight: 600;
 }
