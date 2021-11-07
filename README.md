@@ -4,11 +4,6 @@
 A site to get approximate download time
 built using HTML CSS and JavaScript!
 
-## HACKTOBERFEST IMPORTANT NOTICE
-
-#### Please make sure you are committing your changes to the right branch 
-#### If you PR to the wrong branch then there will be merge conflicts !!!
-For any Queries you can reach me via https://www.linkedin.com/in/adithyapaib/
 
 ## Demo
 
